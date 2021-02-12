@@ -5,6 +5,81 @@ export const navigations = [
     icon: "dashboard"
   },
   {
+    name: "Nonprofits",
+    path: "/nonprofits",
+    icon: "favorite",
+    children: [
+      {
+        name: "No Poverty",
+        path: "/nonprofits/nopoverty"
+      },
+      {
+        name: "Zero Hunger",
+        path: "/nonprofits/zero-hunger"
+      },
+      {
+        name: "Good Health and Well-Being",
+        path: "/nonprofits/good-health"
+      },
+      {
+        name: "Quality Education",
+        path: "/nonprofits/quality-education"
+      },
+      {
+        name: "Gender Equality",
+        path: "/nonprofits/gender-equality"
+      },
+      {
+        name: "Clean Water and Sanitation",
+        path: "/nonprofits/clean-water"
+      },
+      {
+        name: "Affordable and Clean Energy",
+        path: "/nonprofits/clean-energy"
+      },
+      {
+        name: "Decent Work and Economic Growth",
+        path: "/nonprofits/decent-work"
+      },
+      {
+        name: "Industry, Innovation, and Infrastructure",
+        path: "/nonprofits/industry"
+      },
+      {
+        name: "Reduced Inequalties",
+        path: "/nonprofits/reduced-inqualities"
+      },
+      {
+        name: "Sustainable Cities and Communities",
+        path: "/nonprofits/nopoverty"
+      },
+      {
+        name: "Responsible Consumption, and Production",
+        path: "/nonprofits/responsible-consumption"
+      },
+      {
+        name: "Climate Action",
+        path: "/nonprofits/climate-action"
+      },
+      {
+        name: "Life Below Water",
+        path: "/nonprofits/life-below-water"
+      },
+      {
+        name: "Life on Land",
+        path: "/nonprofits/life-on-land"
+      },
+      {
+        name: "Peace, Justice, and Strong Institutions",
+        path: "/nonprofits/peace-justice"
+      },
+      {
+        name: "Partnerships for Goals",
+        path: "/nonprofits/partnerships"
+      }
+    ]
+  },
+  {
     name: "Forms",
     icon: "description",
     children: [
