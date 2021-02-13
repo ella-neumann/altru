@@ -117,13 +117,10 @@ class Layout1Topbar extends Component {
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  {/* <Link
-                    className={classes.menuItem}
-                    to="/page-layouts/user-profile"
-                  > */}
+                   <Link className={classes.menuItem}to="/account/profile">
                   <Icon> person </Icon>
                   <span className="pl-4"> Profile </span>
-                  {/* </Link> */}
+                  </Link>
                 </MenuItem>
                 <MenuItem className={classes.menuItem}>
                   <Icon> settings </Icon>
