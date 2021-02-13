@@ -8,15 +8,16 @@ import { classList } from "utils";
 import { renderRoutes } from "react-router-config";
 import Layout1Topbar from "./Layout1Topbar";
 import Layout1Sidenav from "./Layout1Sidenav";
-import Footer from "../SharedCompoents/Footer";
+//import Footer from "../SharedCompoents/Footer";
 import SecondarySidebar from "../SharedCompoents/SecondarySidebar/SecondarySidebar";
 import AppContext from "app/appContext";
 import { MatxSuspense } from "matx";
 
 const styles = theme => {
+  //how to change this default to dark mode????
   return {
     layout: {
-      backgroundColor: theme.palette.background.default
+      backgroundColor: theme.palette.background.default,
     }
   };
 };
@@ -54,7 +55,7 @@ const Layout1 = props => {
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
             <div className="my-auto" />
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
+            {settings.footer.show && !settings.footer.fixed /*&& <Footer />*/}
           </Scrollbar>
         )}
 
@@ -67,11 +68,11 @@ const Layout1 = props => {
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
             <div className="my-auto" />
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
+            {settings.footer.show && !settings.footer.fixed /*&& <Footer />*/}
           </div>
         )}
 
-        {settings.footer.show && settings.footer.fixed && <Footer />}
+        {settings.footer.show && settings.footer.fixed /*&& <Footer />*/}
       </div>
       {settings.secondarySidebar.show && <SecondarySidebar />}
     </div>

@@ -102,7 +102,7 @@ const MatxCustomizer = props => {
     {
       name: "Horizontal Navigation",
       thumbnail: "/assets/images/screenshots/layout4-customizer.png",
-      isPro: true,
+      isPro: false,
       options: {
         activeLayout: "layout2",
         activeTheme: "purple1",

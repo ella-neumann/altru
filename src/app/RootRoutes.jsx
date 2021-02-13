@@ -7,6 +7,7 @@ import sessionRoutes from "./views/sessions/SessionRoutes";
 
 import materialRoutes from "./views/material-kit/MaterialRoutes";
 import dragAndDropRoute from "./views/Drag&Drop/DragAndDropRoute";
+import SurveyRoute from "./views/Survey/SurveyRoute";
 
 import formsRoutes from "./views/forms/FormsRoutes";
 import mapRoutes from "./views/map/MapRoutes";
@@ -31,6 +32,7 @@ const routes = [
   ...materialRoutes,
   ...utilitiesRoutes,
   ...dragAndDropRoute,
+  ...SurveyRoute,
   ...formsRoutes,
   ...mapRoutes,
   ...redirectRoute,
