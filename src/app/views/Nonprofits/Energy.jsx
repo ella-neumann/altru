@@ -10,7 +10,7 @@ import {
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
 
-const NoPoverty = () => {
+const Energy = () => {
   let list = [
     {
       className: ".font-light",
@@ -64,12 +64,12 @@ const NoPoverty = () => {
         <Breadcrumb
           routeSegments={[
             { name: "Nonprofits", path: "/nonprofits" },
-            { name: "No Poverty"}
+            { name: "Affordable and Clean Energy"}
           ]}
         />
       </div>
 
-      <SimpleCard title="No Poverty">
+      <SimpleCard title="Affordable and Clean Energy">
         <Table>
           <TableHead>
             <TableRow className="bg-default">
@@ -137,4 +137,4 @@ const NoPoverty = () => {
   );
 };
 
-export default NoPoverty;
+export default Energy;

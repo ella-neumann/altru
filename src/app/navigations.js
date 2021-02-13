@@ -31,11 +31,11 @@ export const navigations = [
       },
       {
         name: "Clean Water and Sanitation",
-        path: "/nonprofits/clean-water"
+        path: "/nonprofits/sanitation"
       },
       {
         name: "Affordable and Clean Energy",
-        path: "/nonprofits/clean-energy"
+        path: "/nonprofits/energy"
       },
       {
         name: "Decent Work and Economic Growth",
@@ -46,12 +46,12 @@ export const navigations = [
         path: "/nonprofits/industry"
       },
       {
-        name: "Reduced Inequalties",
-        path: "/nonprofits/reduced-inqualities"
+        name: "Reduced Inequalities",
+        path: "/nonprofits/reduce-inequalities"
       },
       {
         name: "Sustainable Cities and Communities",
-        path: "/nonprofits/nopoverty"
+        path: "/nonprofits/sustainable-cities"
       },
       {
         name: "Responsible Consumption, and Production",
@@ -71,7 +71,7 @@ export const navigations = [
       },
       {
         name: "Peace, Justice, and Strong Institutions",
-        path: "/nonprofits/peace-justice"
+        path: "/nonprofits/peace"
       },
       {
         name: "Partnerships for Goals",

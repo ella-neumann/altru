@@ -151,8 +151,56 @@ const SDGWheel = ({ height, color = [], theme }) => {
       onEvents={{
         click: (e) => {
           console.log(e.name);
-          if (e.name === "Google") {
-            window.location.href = "https://google.com";
+          if (e.name === "No Poverty") {
+            window.location.href = "/nonprofits/no-poverty";
+          }
+          if (e.name === "Zero Hunger") {
+            window.location.href = "/nonprofits/zero-hunger";
+          }
+          if (e.name === "Good Health and Well-being") {
+            window.location.href = "/nonprofits/good-health";
+          }
+          if (e.name === "Quality Education") {
+            window.location.href = "/nonprofits/quality-education";
+          }
+          if (e.name === "Gender Equality") {
+            window.location.href = "/nonprofits/gender-equality";
+          }
+          if (e.name === "Clean Water and Sanitation") {
+            window.location.href = "/nonprofits/sanitation";
+          }
+          if (e.name === "Affordable and Clean Energy") {
+            window.location.href = "/nonprofits/energy";
+          }
+          if (e.name === "Decent Work and Economic Growth") {
+            window.location.href = "/nonprofits/decent-work";
+          }
+          if (e.name === "Industry, Innovation, and Infrastructure") {
+            window.location.href = "/nonprofits/industry";
+          }
+          if (e.name === "Reduced Inequality") {
+            window.location.href = "/nonprofits/reduce-inequalities";
+          }
+          if (e.name === "Sustainable Cities and Communities") {
+            window.location.href = "/nonprofits/sustainable-cities";
+          }
+          if (e.name === "Responsible Consumption and Production") {
+            window.location.href = "/nonprofits/responsible-consumption";
+          }
+          if (e.name === "Climate Action") {
+            window.location.href = "/nonprofits/climate-action";
+          }
+          if (e.name === "Life Below Water") {
+            window.location.href = "/nonprofits/life-below-water";
+          }
+          if (e.name === "Life on Land") {
+            window.location.href = "/nonprofits/life-on-land";
+          }
+          if (e.name === "Peace and Justice Strong Institutions") {
+            window.location.href = "/nonprofits/peace";
+          }
+          if (e.name === "Partnerships to Achieve the Goal") {
+            window.location.href = "/nonprofits/partnerships";
           }
         },
       }}
