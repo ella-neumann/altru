@@ -5,6 +5,9 @@ import dashboardRoutes from "./views/dashboard/DashboardRoutes";
 import utilitiesRoutes from "./views/utilities/UtilitiesRoutes";
 import sessionRoutes from "./views/sessions/SessionRoutes";
 
+import aboutRoutes from "./views/about/AboutRoutes";
+import nonprofitsRoutes from "./views/Nonprofits/NonprofitsRoutes";
+
 import materialRoutes from "./views/material-kit/MaterialRoutes";
 import dragAndDropRoute from "./views/Drag&Drop/DragAndDropRoute";
 
@@ -29,6 +32,8 @@ const routes = [
   ...sessionRoutes,
   ...dashboardRoutes,
   ...materialRoutes,
+  ...nonprofitsRoutes,
+  ...aboutRoutes,
   ...utilitiesRoutes,
   ...dragAndDropRoute,
   ...formsRoutes,

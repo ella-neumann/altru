@@ -11,7 +11,7 @@ export const navigations = [
     children: [
       {
         name: "No Poverty",
-        path: "/nonprofits/nopoverty"
+        path: "/nonprofits/no-poverty"
       },
       {
         name: "Zero Hunger",
@@ -80,6 +80,20 @@ export const navigations = [
     ]
   },
   {
+    name: "Nonprofit Rating System",
+    icon: "trending_up",
+    children:[
+      {
+        name: "About Altru",
+        path: "/about/about-altru",
+      },
+      {
+        name: "Rating System",
+        path: "/about/rating-process"
+      }
+    ]
+  },
+  {
     name: "Forms",
     icon: "description",
     children: [
@@ -99,11 +113,6 @@ export const navigations = [
     name: "Drag and Drop",
     icon: "control_camera",
     path: "/others/drag-and-drop"
-  },
-  {
-    name: "Nonprofit Rating System",
-    icon: "trending_up",
-    path: "/about/about-altru"
   },
   {
     name: "Multilevel",

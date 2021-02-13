@@ -1,10 +1,10 @@
 import React from "react";
 
-const utilitiesRoutes = [
+const nonprofitsRoutes = [
   {
     path: "/nonprofits/no-poverty",
     component: React.lazy(() => import("./NoPoverty"))
   }
 ];
 
-export default utilitiesRoutes;
+export default nonprofitsRoutes;

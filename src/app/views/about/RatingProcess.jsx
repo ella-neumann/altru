@@ -100,25 +100,49 @@ const AboutAltru = () => {
         />
       </div>
       <SimpleCard title="The Altru Nonprofit Rating Process">
-        <h6>We want to find the most transparent organizations for you to connect with.</h6>
+        <h3>We are constantly working to find the best nonprofits for you</h3>
+        <ul>
+          <li>
+            <code>m</code> - for classes that set <code>margin</code>
+          </li>
+          <li>
+            <code>p</code> - for classes that set <code>padding</code>
+          </li>
+        </ul>
         <p>
-          Understanding the Nonprofit Sector:
+          Where <em>sides</em> is one of:
         </p>
         <ul>
           <li>
-          In the United States, there are currently over 1.3 million nonprofits. Powering these nonprofits are 77 million Americans, or 30% of the US adult population, who volunteer their money, time, and energy to make the world a better place.
+            <code>t</code> - for classes that set <code>margin-top</code> or{" "}
+            <code>padding-top</code>
           </li>
           <li>
-          Nonprofit donors, members of the U.S. Senate, and other nonprofit stakeholders are concerned about the lack of transparency in the nonprofit sector.
+            <code>b</code> - for classes that set <code>margin-bottom</code> or{" "}
+            <code>padding-bottom</code>
           </li>
           <li>
-          According to Stanford Center on Longevity, many individuals do not volunteer time or money to nonprofits because they do not have enough information and most volunteer opportunities do not seem interesting.
+            <code>l</code> - for classes that set <code>margin-left</code> or{" "}
+            <code>padding-left</code>
           </li>
           <li>
-          The Corporation for National and Community Service notes that nonprofit giving has grown by 4.1% year over year, with online donations up 12% since last year.
+            <code>r</code> - for classes that set <code>margin-right</code> or{" "}
+            <code>padding-right</code>
+          </li>
+          <li>
+            <code>x</code> - for classes that set both <code>*-left</code> and{" "}
+            <code>*-right</code>
+          </li>
+          <li>
+            <code>y</code> - for classes that set both <code>*-top</code> and{" "}
+            <code>*-bottom</code>
+          </li>
+          <li>
+            blank - for classes that set a <code>margin</code> or{" "}
+            <code>padding</code> on all 4 sides of the element
           </li>
         </ul>
-
+        
       </SimpleCard>
     </div>
   );
