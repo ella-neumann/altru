@@ -63,13 +63,13 @@ const NoPoverty = () => {
       <div className="mb-sm-30">
         <Breadcrumb
           routeSegments={[
-            { name: "Nonprofits", path: "/nonprofits/nopoverty" },
-            { name: "NoPoverty" }
+            { name: "Nonprofits", path: "/nonprofits" },
+            { name: "NoPoverty"}
           ]}
         />
       </div>
 
-      <SimpleCard title="noPoverty">
+      <SimpleCard title="no-poverty">
         <Table>
           <TableHead>
             <TableRow className="bg-default">

@@ -101,6 +101,11 @@ export const navigations = [
     path: "/others/drag-and-drop"
   },
   {
+    name: "Nonprofit Rating System",
+    icon: "trending_up",
+    path: "/about/about-altru"
+  },
+  {
     name: "Multilevel",
     icon: "trending_up",
     children: [
