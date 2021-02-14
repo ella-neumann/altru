@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, useReducer } from "react";
 import PropTypes from "prop-types";
 import { Switch, Icon, MenuItem, Tooltip, IconButton } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
@@ -16,6 +16,7 @@ import Brand from "../SharedCompoents/Brand";
 import SidenavTheme from "../MatxTheme/SidenavTheme/SidenavTheme";
 import { isMdScreen } from "utils";
 import { merge } from "lodash";
+import { Link } from "react-router-dom";
 
 const styles = theme => ({});
 
@@ -137,9 +138,14 @@ class Layout1Sidenav extends Component {
             </MatxMenu>
 
             <Tooltip title="Profile">
-              <IconButtonWhite aria-label="Delete" className="" size="small">
-                <IconSmall>person</IconSmall>
-              </IconButtonWhite>
+            <Link className={user.Tooltip}to="/account/profile">
+                <IconButtonWhite 
+                  aria-label="Delete" 
+                  className="" 
+                  size="small">
+                  <IconSmall>person</IconSmall>
+                </IconButtonWhite>
+            </Link>
             </Tooltip>
             <Tooltip title="Sign out">
               <IconButtonWhite
