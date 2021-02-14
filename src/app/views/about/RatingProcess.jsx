@@ -102,46 +102,9 @@ const AboutAltru = () => {
       <SimpleCard title="The Altru Nonprofit Rating Process">
         <h3>We are constantly working to find the best nonprofits for you</h3>
         <ul>
-          <li>
-            <code>m</code> - for classes that set <code>margin</code>
-          </li>
-          <li>
-            <code>p</code> - for classes that set <code>padding</code>
-          </li>
+          
         </ul>
-        <p>
-          Where <em>sides</em> is one of:
-        </p>
-        <ul>
-          <li>
-            <code>t</code> - for classes that set <code>margin-top</code> or{" "}
-            <code>padding-top</code>
-          </li>
-          <li>
-            <code>b</code> - for classes that set <code>margin-bottom</code> or{" "}
-            <code>padding-bottom</code>
-          </li>
-          <li>
-            <code>l</code> - for classes that set <code>margin-left</code> or{" "}
-            <code>padding-left</code>
-          </li>
-          <li>
-            <code>r</code> - for classes that set <code>margin-right</code> or{" "}
-            <code>padding-right</code>
-          </li>
-          <li>
-            <code>x</code> - for classes that set both <code>*-left</code> and{" "}
-            <code>*-right</code>
-          </li>
-          <li>
-            <code>y</code> - for classes that set both <code>*-top</code> and{" "}
-            <code>*-bottom</code>
-          </li>
-          <li>
-            blank - for classes that set a <code>margin</code> or{" "}
-            <code>padding</code> on all 4 sides of the element
-          </li>
-        </ul>
+
         
       </SimpleCard>
     </div>
