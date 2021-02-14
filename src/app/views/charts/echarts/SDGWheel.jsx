@@ -34,7 +34,7 @@ const SDGWheel = ({ height, color = [], theme }) => {
       {
         name: "SDG Goal",
         type: "pie",
-        radius: ["45%", "72.55%"],
+        radius: ["55%", "90%"],
         center: ["50%", "50%"],
         avoidLabelOverlap: false,
         hoverOffset: 5,
@@ -136,11 +136,14 @@ const SDGWheel = ({ height, color = [], theme }) => {
           },
         ],
         itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: "rgba(0, 0, 0, 0.5)",
-          },
+          borderColor: "#fff",
+          borderWidth: 10,
+          borderRadius: 10,
+          // emphasis: {
+          //   shadowBlur: 10,
+          //   shadowOffsetX: 0,
+          //   shadowColor: "rgba(0, 0, 0, 0.5)",
+          // },
         },
       },
     ],

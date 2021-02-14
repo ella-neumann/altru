@@ -12,41 +12,111 @@ import UpgradeCard from "./shared/UpgradeCard";
 import Campaigns from "./shared/Campaigns";
 import { withStyles } from "@material-ui/styles";
 import SDGWheel from "../charts/echarts/SDGWheel";
+import { Button } from "@material-ui/core";
 
 class Dashboard1 extends Component {
   state = {};
 
   render() {
     let { theme } = this.props;
+    let height = "calc(100vh - 64px)";
+    let circleHeight = "calc(100vh - 24vh)";
 
     return (
       <Fragment>
-        <SDGWheel
-          height="60vh"
-          color={[
-            "#e5243b",
-            "#DDA63A",
-            "#4C9F38",
-            "#C5192D",
-            "#FF3A21",
-            "#26BDE2",
-            "#FCC30B",
-            "#A21942",
-            "#FD6925",
-            "#DD1367",
-            "#FD9D24",
-            "#BF8B2E",
-            "#3F7E44",
-            "#0A97D9",
-            "#56C02B",
-            "#00689D",
-            "#19486A",
-          ]}
-        />
-        <div className="pb-24 pt-7 px-8 bg-primary">
+        <div
+          style={{
+            backgroundImage:
+              "url('https://cdn.discordapp.com/attachments/798243218818990124/802325619945111602/GettyImages_1060748862.png')",
+            backgroundSize: "100vh 100vh",
+            height: height,
+            width: "100vw",
+          }}
+        >
           <div className="card-title capitalize text-white mb-5 text-white-secondary">
-            Change the world with us!
+            <h1>Change the world with us!</h1>
           </div>
+          <div
+            style={{
+              position: "absolute",
+              bottom: "5vh",
+              left: "5vw",
+              height: "20vh",
+              width: "30vh",
+              background: "#3A4253",
+              borderRadius: "20px",
+            }}
+          >
+            <p
+              style={{ color: "white", fontSize: "2.5vh", textAlign: "center" }}
+            >
+              Unsure what you are passionate about?
+            </p>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                window.location.href = "../../survey";
+              }}
+              style={{
+                position: "relative",
+                minWidth: "60%",
+                left: "20%",
+              }}
+            >
+              Take our survey!
+            </Button>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              left: "30%",
+              maxWidth: circleHeight,
+              maxHeight: circleHeight,
+              background: "white",
+              borderRadius: circleHeight,
+            }}
+          >
+            <SDGWheel
+              height={circleHeight}
+              color={[
+                "#e5243b",
+                "#DDA63A",
+                "#4C9F38",
+                "#C5192D",
+                "#FF3A21",
+                "#26BDE2",
+                "#FCC30B",
+                "#A21942",
+                "#FD6925",
+                "#DD1367",
+                "#FD9D24",
+                "#BF8B2E",
+                "#3F7E44",
+                "#0A97D9",
+                "#56C02B",
+                "#00689D",
+                "#19486A",
+              ]}
+            />
+            <div>
+              <a href="https://sdgs.un.org/goals">
+                <img
+                  src="https://cdn.discordapp.com/attachments/798243218818990124/810636363916902452/1200px-Sustainable_Development_Goals_logo.png"
+                  style={{
+                    display: "block",
+                    maxHeight: "25vh",
+                    position: "absolute",
+                    bottom: "calc(50vh - 22.5vh)",
+                    left: "calc(50% - 20%)",
+                  }}
+                ></img>
+              </a>
+            </div>
+          </div>
+        </div>
+        {/*
+        <div className="pb-24 pt-7 px-8 bg-primary">
           <ModifiedAreaChart
             height="280px"
             option={{
@@ -76,13 +146,11 @@ class Dashboard1 extends Component {
           ></ModifiedAreaChart>
         </div>
 
-        <div className="analytics m-sm-30 mt--18">
+         <div className="analytics m-sm-30 mt--18">
           <Grid container spacing={3}>
             <Grid item lg={8} md={8} sm={12} xs={12}>
               <StatCards />
 
-              {/* Top Selling Products */}
-              {/* NOn proFitsS? */}
               <TableCard />
 
               <StatCards2 />
@@ -110,7 +178,7 @@ class Dashboard1 extends Component {
               <Campaigns />
             </Grid>
           </Grid>
-        </div>
+        </div> */}
       </Fragment>
     );
   }
