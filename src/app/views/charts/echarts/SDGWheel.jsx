@@ -161,9 +161,9 @@ const SDGWheel = ({ height, color = [], theme }) => {
           },
         ],
         itemStyle: {
-          borderColor: "#fff",
-          borderWidth: 10,
-          borderRadius: 10,
+          borderColor: "lightgrey",
+          borderWidth: 5,
+          borderRadius: "20px",
           // emphasis: {
           //   shadowBlur: 10,
           //   shadowOffsetX: 0,
@@ -179,39 +179,43 @@ const SDGWheel = ({ height, color = [], theme }) => {
       onEvents={{
         click: (e) => {
           console.log(e.name);
-          if (e.name === "No Poverty") {
+          if (e.name.includes("No Poverty")) {
             window.location.href = "/nonprofits/no-poverty";
-          } else if (e.name === "Zero Hunger") {
+          } else if (e.name.includes("Zero Hunger")) {
             window.location.href = "/nonprofits/zero-hunger";
-          } else if (e.name === "Good Health and Well-being") {
+          } else if (e.name.includes("Good Health and Well-being")) {
             window.location.href = "/nonprofits/good-health";
-          } else if (e.name === "Quality Education") {
+          } else if (e.name.includes("Quality Education")) {
             window.location.href = "/nonprofits/quality-education";
-          } else if (e.name === "Gender Equality") {
+          } else if (e.name.includes("Gender Equality")) {
             window.location.href = "/nonprofits/gender-equality";
-          } else if (e.name === "Clean Water and Sanitation") {
+          } else if (e.name.includes("Clean Water and Sanitation")) {
             window.location.href = "/nonprofits/sanitation";
-          } else if (e.name === "Affordable and Clean Energy") {
+          } else if (e.name.includes("Affordable and Clean Energy")) {
             window.location.href = "/nonprofits/energy";
-          } else if (e.name === "Decent Work and Economic Growth") {
+          } else if (e.name.includes("Decent Work and Economic Growth")) {
             window.location.href = "/nonprofits/decent-work";
-          } else if (e.name === "Industry, Innovation, and Infrastructure") {
+          } else if (
+            e.name.includes("Industry, Innovation, and Infrastructure")
+          ) {
             window.location.href = "/nonprofits/industry";
-          } else if (e.name === "Reduced Inequality") {
+          } else if (e.name.includes("Reduced Inequality")) {
             window.location.href = "/nonprofits/reduce-inequalities";
-          } else if (e.name === "Sustainable Cities and Communities") {
+          } else if (e.name.includes("Sustainable Cities and Communities")) {
             window.location.href = "/nonprofits/sustainable-cities";
-          } else if (e.name === "Responsible Consumption and Production") {
+          } else if (
+            e.name.includes("Responsible Consumption and Production")
+          ) {
             window.location.href = "/nonprofits/responsible-consumption";
-          } else if (e.name === "Climate Action") {
+          } else if (e.name.includes("Climate Action")) {
             window.location.href = "/nonprofits/climate-action";
-          } else if (e.name === "Life Below Water") {
+          } else if (e.name.includes("Life Below Water")) {
             window.location.href = "/nonprofits/life-below-water";
-          } else if (e.name === "Life on Land") {
+          } else if (e.name.includes("Life on Land")) {
             window.location.href = "/nonprofits/life-on-land";
-          } else if (e.name === "Peace and Justice Strong Institutions") {
+          } else if (e.name.includes("Peace and Justice Strong Institutions")) {
             window.location.href = "/nonprofits/peace";
-          } else if (e.name === "Partnerships to Achieve the Goal") {
+          } else if (e.name.includes("Partnerships to Achieve the Goal")) {
             window.location.href = "/nonprofits/partnerships";
           }
         },

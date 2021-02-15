@@ -71,7 +71,7 @@ class Dashboard1 extends Component {
               top: "10%",
               maxWidth: circleHeight,
               maxHeight: circleHeight,
-              background: "white",
+              background: "lightgrey",
               borderRadius: circleHeight,
             }}
           >
