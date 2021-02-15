@@ -10,6 +10,7 @@ import nonprofitsRoutes from "./views/Nonprofits/NonprofitsRoutes";
 
 import materialRoutes from "./views/material-kit/MaterialRoutes";
 import dragAndDropRoute from "./views/Drag&Drop/DragAndDropRoute";
+import SurveyRoute from "./views/Survey/SurveyRoute";
 
 import formsRoutes from "./views/forms/FormsRoutes";
 import mapRoutes from "./views/map/MapRoutes";
@@ -37,7 +38,7 @@ const routes = [
   ...nonprofitsRoutes,
   ...aboutRoutes,
   ...utilitiesRoutes,
-  ...dragAndDropRoute,
+  ...SurveyRoute,
   ...formsRoutes,
   ...mapRoutes,
   ...redirectRoute,
