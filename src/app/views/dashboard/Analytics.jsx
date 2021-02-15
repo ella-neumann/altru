@@ -33,9 +33,6 @@ class Dashboard1 extends Component {
             width: "100vw",
           }}
         >
-          <div className="card-title capitalize text-white mb-5 text-white-secondary">
-            <h1>Change the world with us!</h1>
-          </div>
           <div
             style={{
               position: "absolute",
@@ -71,6 +68,7 @@ class Dashboard1 extends Component {
             style={{
               position: "relative",
               left: "30%",
+              top: "10%",
               maxWidth: circleHeight,
               maxHeight: circleHeight,
               background: "white",
