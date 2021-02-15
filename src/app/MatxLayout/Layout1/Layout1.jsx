@@ -13,15 +13,15 @@ import SecondarySidebar from "../SharedCompoents/SecondarySidebar/SecondarySideb
 import AppContext from "app/appContext";
 import { MatxSuspense } from "matx";
 
-const styles = theme => {
+const styles = (theme) => {
   return {
     layout: {
-      backgroundColor: theme.palette.background.default
-    }
+      backgroundColor: theme.palette.background.default,
+    },
   };
 };
 
-const Layout1 = props => {
+const Layout1 = (props) => {
   const { routes } = useContext(AppContext);
   let { settings, classes, theme } = props;
   let { layout1Settings } = settings;
@@ -29,7 +29,7 @@ const Layout1 = props => {
   let layoutClasses = {
     [classes.layout]: true,
     [`${settings.activeLayout} sidenav-${layout1Settings.leftSidebar.mode} theme-${theme.palette.type} flex`]: true,
-    "topbar-fixed": layout1Settings.topbar.fixed
+    "topbar-fixed": layout1Settings.topbar.fixed,
   };
 
   return (
@@ -54,7 +54,7 @@ const Layout1 = props => {
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
             <div className="my-auto" />
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
+            {settings.footer.show && !settings.footer.fixed /*&& <Footer />*/}
           </Scrollbar>
         )}
 
@@ -67,11 +67,11 @@ const Layout1 = props => {
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
             <div className="my-auto" />
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
+            {settings.footer.show && !settings.footer.fixed /*&& <Footer />*/}
           </div>
         )}
 
-        {settings.footer.show && settings.footer.fixed && <Footer />}
+        {settings.footer.show && settings.footer.fixed /*&& <Footer />*/}
       </div>
       {settings.secondarySidebar.show && <SecondarySidebar />}
     </div>
@@ -79,12 +79,12 @@ const Layout1 = props => {
 };
 
 Layout1.propTypes = {
-  settings: PropTypes.object.isRequired
+  settings: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   setLayoutSettings: PropTypes.func.isRequired,
-  settings: state.layout.settings
+  settings: state.layout.settings,
 });
 
 export default withStyles(styles, { withTheme: true })(

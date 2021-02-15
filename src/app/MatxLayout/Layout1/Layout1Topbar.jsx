@@ -12,28 +12,28 @@ import NotificationBar from "../SharedCompoents/NotificationBar";
 import { Link } from "react-router-dom";
 import ShoppingCart from "../SharedCompoents/ShoppingCart";
 
-const styles = theme => ({
+const styles = (theme) => ({
   topbar: {
     "& .topbar-hold": {
       backgroundColor: theme.palette.primary.main,
       height: "80px",
       "&.fixed": {
         boxShadow: theme.shadows[8],
-        height: "64px"
-      }
-    }
+        height: "64px",
+      },
+    },
   },
   menuItem: {
     display: "flex",
     alignItems: "center",
-    minWidth: 185
-  }
+    minWidth: 185,
+  },
 });
 
 class Layout1Topbar extends Component {
   state = {};
 
-  updateSidebarMode = sidebarSettings => {
+  updateSidebarMode = (sidebarSettings) => {
     let { settings, setLayoutSettings } = this.props;
 
     setLayoutSettings({
@@ -42,9 +42,9 @@ class Layout1Topbar extends Component {
         ...settings.layout1Settings,
         leftSidebar: {
           ...settings.layout1Settings.leftSidebar,
-          ...sidebarSettings
-        }
-      }
+          ...sidebarSettings,
+        },
+      },
     });
   };
 
@@ -80,20 +80,28 @@ class Layout1Topbar extends Component {
                 <Icon>menu</Icon>
               </IconButton>
 
+              <img
+                style={{
+                  maxHeight: "50px",
+                  position: "relative",
+                  bottom: "-30px",
+                }}
+                src="/assets/images/logo.png"
+              ></img>
               <div className="hide-on-mobile">
-                <IconButton>
-                  <Icon>mail_outline</Icon>
-                </IconButton>
-
-                <IconButton>
-                  <Icon>web_asset</Icon>
-                </IconButton>
-
-                <IconButton>
-                  <Icon>star_outline</Icon>
-                </IconButton>
+                <p
+                  style={{
+                    color: "white",
+                    fontSize: "24pt",
+                    position: "relative",
+                    left: "10px",
+                  }}
+                >
+                  Change the world with us!
+                </p>
               </div>
             </div>
+
             <div className="flex items-center">
               <MatxSearchBox />
 
@@ -145,13 +153,13 @@ class Layout1Topbar extends Component {
 Layout1Topbar.propTypes = {
   setLayoutSettings: PropTypes.func.isRequired,
   logoutUser: PropTypes.func.isRequired,
-  settings: PropTypes.object.isRequired
+  settings: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   setLayoutSettings: PropTypes.func.isRequired,
   logoutUser: PropTypes.func.isRequired,
-  settings: state.layout.settings
+  settings: state.layout.settings,
 });
 
 export default withStyles(styles, { withTheme: true })(

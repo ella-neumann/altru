@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import { Icon, IconButton } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     "&::placeholder": {
-      color: theme.palette.primary.contrastText
-    }
-  }
+      color: theme.palette.primary.contrastText,
+    },
+  },
 });
 
 class MatxSearchBox extends Component {
   state = {
-    open: false
+    open: false,
   };
 
   toggle = () => {
@@ -38,7 +38,7 @@ class MatxSearchBox extends Component {
             <input
               className={`px-4 search-box w-full ${classes.root}`}
               type="text"
-              placeholder="Search here..."
+              placeholder="Search for nonprofits..."
               autoFocus
             />
             <IconButton onClick={this.toggle} className="align-middle mx-4">

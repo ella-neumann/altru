@@ -7,7 +7,16 @@ const SDGWheel = ({ height, color = [], theme }) => {
     tooltip: {
       show: true,
       trigger: "item",
-      formatter: "{a} <br/>{b} {c}",
+      confine: true,
+      formatter: "{a} <br/>{b}",
+      //TODO: idk why it won't break up the text
+      textStyle: {
+        fontSize: 14,
+        width: 500,
+        height: 100,
+        overflow: "break",
+        lineOverflow: "truncate",
+      },
     },
     xAxis: [
       {
@@ -32,9 +41,9 @@ const SDGWheel = ({ height, color = [], theme }) => {
 
     series: [
       {
-        name: "SDG Goal",
+        name: "Sustainable Development Goal:",
         type: "pie",
-        radius: ["45%", "72.55%"],
+        radius: ["55%", "90%"],
         center: ["50%", "50%"],
         avoidLabelOverlap: false,
         hoverOffset: 5,
@@ -51,9 +60,9 @@ const SDGWheel = ({ height, color = [], theme }) => {
             // formatter: "{a}",
           },
           emphasis: {
-            show: false,
+            focus: "data",
             textStyle: {
-              fontSize: "14",
+              fontSize: 14,
               fontWeight: "normal",
               // color: "rgba(15, 21, 77, 1)"
             },
@@ -68,79 +77,98 @@ const SDGWheel = ({ height, color = [], theme }) => {
         data: [
           {
             value: 1,
-            name: "No Poverty",
+            name: "No Poverty - End poverty in all its forms everywhere.",
           },
           {
             value: 1,
-            name: "Zero Hunger",
+            name:
+              "Zero Hunger - End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
           },
           {
             value: 1,
-            name: "Good Health and Well-being",
+            name:
+              "Good Health and Well-being - Ensure healthy lives and promote well-being for all at all ages.",
           },
           {
             value: 1,
-            name: "Quality Education",
+            name:
+              "Quality Education - Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
           },
           {
             value: 1,
-            name: "Gender Equality",
+            name:
+              "Gender Equality - Achieve gender equality and empower all women and girls.",
           },
           {
             value: 1,
-            name: "Clean Water and Sanitation",
+            name:
+              "Clean Water and Sanitation - Ensure availability and sustainable management of water and sanitation for all.",
           },
           {
             value: 1,
-            name: "Affordable and Clean Energy",
+            name:
+              "Affordable and Clean Energy - Ensure access to affordable, reliable, sustainable and modern energy for all.",
           },
           {
             value: 1,
-            name: "Decent Work and Economic Growth",
+            name:
+              "Decent Work and Economic Growth - Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
           },
           {
             value: 1,
-            name: "Industry, Innovation, and Infrastructure",
+            name:
+              "Industry, Innovation, and Infrastructure - Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
           },
           {
             value: 1,
-            name: "Reduced Inequality",
+            name:
+              "Reduced Inequality - Reduce inequality within and among countries.",
           },
           {
             value: 1,
-            name: "Sustainable Cities and Communities",
+            name:
+              "Sustainable Cities and Communities - Make cities and human settlements inclusive, safe, resilient and sustainable.",
           },
           {
             value: 1,
-            name: "Responsible Consumption and Production",
+            name:
+              "Responsible Consumption and Production - Ensure sustainable consumption and production patterns.",
           },
           {
             value: 1,
-            name: "Climate Action",
+            name:
+              "Climate Action - Take urgent action to combat climate change and its impacts.",
           },
           {
             value: 1,
-            name: "Life Below Water",
+            name:
+              "Life Below Water - Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
           },
           {
             value: 1,
-            name: "Life on Land",
+            name:
+              "Life on Land - Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
           },
           {
             value: 1,
-            name: "Peace and Justice Strong Institutions",
+            name:
+              "Peace and Justice Strong Institutions - Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
           },
           {
             value: 1,
-            name: "Partnerships to Achieve the Goal",
+            name:
+              "Partnerships to Achieve the Goal - Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
           },
         ],
         itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: "rgba(0, 0, 0, 0.5)",
-          },
+          borderColor: "#fff",
+          borderWidth: 10,
+          borderRadius: 10,
+          // emphasis: {
+          //   shadowBlur: 10,
+          //   shadowOffsetX: 0,
+          //   shadowColor: "rgba(0, 0, 0, 0.5)",
+          // },
         },
       },
     ],
@@ -153,53 +181,37 @@ const SDGWheel = ({ height, color = [], theme }) => {
           console.log(e.name);
           if (e.name === "No Poverty") {
             window.location.href = "/nonprofits/no-poverty";
-          }
-          if (e.name === "Zero Hunger") {
+          } else if (e.name === "Zero Hunger") {
             window.location.href = "/nonprofits/zero-hunger";
-          }
-          if (e.name === "Good Health and Well-being") {
+          } else if (e.name === "Good Health and Well-being") {
             window.location.href = "/nonprofits/good-health";
-          }
-          if (e.name === "Quality Education") {
+          } else if (e.name === "Quality Education") {
             window.location.href = "/nonprofits/quality-education";
-          }
-          if (e.name === "Gender Equality") {
+          } else if (e.name === "Gender Equality") {
             window.location.href = "/nonprofits/gender-equality";
-          }
-          if (e.name === "Clean Water and Sanitation") {
+          } else if (e.name === "Clean Water and Sanitation") {
             window.location.href = "/nonprofits/sanitation";
-          }
-          if (e.name === "Affordable and Clean Energy") {
+          } else if (e.name === "Affordable and Clean Energy") {
             window.location.href = "/nonprofits/energy";
-          }
-          if (e.name === "Decent Work and Economic Growth") {
+          } else if (e.name === "Decent Work and Economic Growth") {
             window.location.href = "/nonprofits/decent-work";
-          }
-          if (e.name === "Industry, Innovation, and Infrastructure") {
+          } else if (e.name === "Industry, Innovation, and Infrastructure") {
             window.location.href = "/nonprofits/industry";
-          }
-          if (e.name === "Reduced Inequality") {
+          } else if (e.name === "Reduced Inequality") {
             window.location.href = "/nonprofits/reduce-inequalities";
-          }
-          if (e.name === "Sustainable Cities and Communities") {
+          } else if (e.name === "Sustainable Cities and Communities") {
             window.location.href = "/nonprofits/sustainable-cities";
-          }
-          if (e.name === "Responsible Consumption and Production") {
+          } else if (e.name === "Responsible Consumption and Production") {
             window.location.href = "/nonprofits/responsible-consumption";
-          }
-          if (e.name === "Climate Action") {
+          } else if (e.name === "Climate Action") {
             window.location.href = "/nonprofits/climate-action";
-          }
-          if (e.name === "Life Below Water") {
+          } else if (e.name === "Life Below Water") {
             window.location.href = "/nonprofits/life-below-water";
-          }
-          if (e.name === "Life on Land") {
+          } else if (e.name === "Life on Land") {
             window.location.href = "/nonprofits/life-on-land";
-          }
-          if (e.name === "Peace and Justice Strong Institutions") {
+          } else if (e.name === "Peace and Justice Strong Institutions") {
             window.location.href = "/nonprofits/peace";
-          }
-          if (e.name === "Partnerships to Achieve the Goal") {
+          } else if (e.name === "Partnerships to Achieve the Goal") {
             window.location.href = "/nonprofits/partnerships";
           }
         },
