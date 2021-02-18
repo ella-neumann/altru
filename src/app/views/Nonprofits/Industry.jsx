@@ -74,64 +74,35 @@ const Industry = () => {
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
+              <TableCell className="px-0" colspan="2">Summary</TableCell>
               <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
+              <TableCell className="px-0">Status</TableCell>
               <TableCell className="px-0">Scope</TableCell>
               <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Social Media</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
-            <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
-              </TableCell>
+          <TableRow>
+              <TableCell className="px-0"><span className="H5">Zoo Atlanta</span></TableCell>
+              <TableCell className="px-0" colspan="2">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
+              <TableCell className="px-0"><span className="H6">A+</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
             </TableRow>
 
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
-                </TableCell>
-              </TableRow>
-            ))}
+            <TableRow>
+              <TableCell className="px-0"><a href='https://www.rainforestcoalition.org/'  className="H5">Coalition for Rainforest Nations</a></TableCell>
+              <TableCell className="px-0" colspan="2">The Coalition for Rainforest Nations (CfRN or the ‘Coalition) assists tropical governments, communities and peoples responsibly manage their rainforests. Healthy rainforests protect against a changing climate, generate needed biodiversity and provide safe habitats.</TableCell>
+              <TableCell className="px-0"><span className="H6">B+</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+            </TableRow>
+
           </TableBody>
         </Table>
-
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
       </SimpleCard>
     </div>
   );

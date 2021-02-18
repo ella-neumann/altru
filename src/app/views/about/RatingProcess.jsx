@@ -89,7 +89,7 @@ const AboutAltru = () => {
        `
     }
   ];
-
+  
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
@@ -99,13 +99,13 @@ const AboutAltru = () => {
           ]}
         />
       </div>
+      
       <SimpleCard title="The Altru Nonprofit Rating Process">
+        <center><img src="/assets/images/logo.png" width="70" height="70" alt="company-logo" /></center>
         <h3>We are constantly working to find the best nonprofits for you</h3>
         <ul>
-          
+          Altru rates nonprofits with letter grades based on their fiscal transparency, auditing history, and executive compensation. We know that your money and time is valuable, so we want you to make the biggest impact possible.
         </ul>
-
-        
       </SimpleCard>
     </div>
   );
