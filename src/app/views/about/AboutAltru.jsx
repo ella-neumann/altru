@@ -108,12 +108,15 @@ const AboutAltru = () => {
           <li>
           In the United States, there are currently over 1.3 million nonprofits. Powering these nonprofits are 77 million Americans, or 30% of the US adult population, who volunteer their money, time, and energy to make the world a better place.
           </li>
+          <p> </p>
           <li>
           Nonprofit donors, members of the U.S. Senate, and other nonprofit stakeholders are concerned about the lack of transparency in the nonprofit sector.
           </li>
+          <p> </p>
           <li>
           According to Stanford Center on Longevity, many individuals do not volunteer time or money to nonprofits because they do not have enough information and most volunteer opportunities do not seem interesting.
           </li>
+          <p> </p>
           <li>
           The Corporation for National and Community Service notes that nonprofit giving has grown by 4.1% year over year, with online donations up 12% since last year.
           </li>

@@ -74,21 +74,21 @@ const ReduceInequalities = () => {
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0" colspan="2">Summary</TableCell>
+              <TableCell className="px-0" colspan="3">Summary</TableCell>
+              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Rating</TableCell>
               <TableCell className="px-0">Status</TableCell>
               <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Social Media</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
 
             <TableRow>
-              <TableCell className="px-0"><a href='https://bcnc.net/'  className="H5">Boston Chinatown Neighborhood Center</a></TableCell>
-              <TableCell className="px-0" colspan="2">The mission of Boston Chinatown Neighborhood Center is to ensure that the children, youth and families we serve have the resources and support they need to achieve greater economic success and social and physical well-being. Since 1969, BCNC has served as a vital link supporting the growing Asian immigrant and Asian American community of Greater Boston. Focusing on those most in need, over 70% of BCNC's constituents meet federal poverty guidelines.</TableCell>
-              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"><a href='https://bcnc.net/'  className="H5"><b>Boston Chinatown Neighborhood Center</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">The mission of Boston Chinatown Neighborhood Center is to ensure that the children, youth and families we serve have the resources and support they need to achieve greater economic success and social and physical well-being. Since 1969, BCNC has served as a vital link supporting the growing Asian immigrant and Asian American community of Greater Boston. Focusing on those most in need, over 70% of BCNC's constituents meet federal poverty guidelines.</TableCell>
               <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
             </TableRow>

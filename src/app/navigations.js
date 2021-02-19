@@ -90,6 +90,10 @@ export const navigations = [
       {
         name: "Rating System",
         path: "/about/rating-process"
+      },
+      {
+        name: "About SDGs",
+        path: "/about/sdg"
       }
     ]
   },

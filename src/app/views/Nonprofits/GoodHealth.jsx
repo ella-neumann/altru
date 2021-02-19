@@ -74,30 +74,30 @@ const GoodHealth = () => {
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0" colspan="2">Summary</TableCell>
+              <TableCell className="px-0">Like</TableCell>
+              <TableCell className="px-0" colspan="3">Summary</TableCell>
               <TableCell className="px-0">Rating</TableCell>
               <TableCell className="px-0">Status</TableCell>
               <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Social Media</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
 
             <TableRow>
-              <TableCell className="px-0"><a href='https://www.activeminds.org/'  className="H5">Active Minds</a></TableCell>
-              <TableCell className="px-0" colspan="2">Active Minds is the nation's premier nonprofit organization supporting mental health awareness and education for young adults We are dedicated to saving lives and to building stronger families and communities. Through education, research, advocacy, and a focus on young adults ages 14–25, Active Minds is opening up the conversation about mental health and creating lasting change in the way mental health is talked about, cared for, and valued in the United States. What has guided and distinguished us from the start is a belief that young people will be the drivers of change.</TableCell>
-              <TableCell className="px-0"><span className="H6">A+</span></TableCell>
+              <TableCell className="px-0"><a href='https://www.activeminds.org/'  className="H5"><b>Active Minds</b></a></TableCell>
               <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0" colspan="3">Active Minds is the nation's premier nonprofit organization supporting mental health awareness and education for young adults We are dedicated to saving lives and to building stronger families and communities. Through education, research, advocacy, and a focus on young adults ages 14–25, Active Minds is opening up the conversation about mental health and creating lasting change in the way mental health is talked about, cared for, and valued in the United States. What has guided and distinguished us from the start is a belief that young people will be the drivers of change.</TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
             </TableRow>
 
             <TableRow>
-              <TableCell className="px-0"><a href='https://bikeworks.org/'  className="H5">Bike Works Seattle</a></TableCell>
-              <TableCell className="px-0" colspan="2">Bike Works promotes the bicycle as a vehicle for change to empower youth and build resilient communities. We believe that bicycling is an accessible form of transportation that promotes public health, builds confidence, encourages environmental stewardship and strengthens community. </TableCell>
-              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"><a href='https://bikeworks.org/'  className="H5"><b>Bike Works Seattle</b></a></TableCell>
               <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0" colspan="3">Bike Works promotes the bicycle as a vehicle for change to empower youth and build resilient communities. We believe that bicycling is an accessible form of transportation that promotes public health, builds confidence, encourages environmental stewardship and strengthens community. </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
             </TableRow>

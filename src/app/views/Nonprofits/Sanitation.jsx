@@ -70,39 +70,31 @@ const Sanitation = () => {
       </div>
 
       <SimpleCard title="Clean Water and Sanitation">
-        <Table>
-          <TableHead>
-            <TableRow className="bg-default">
-              <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0" colspan="2">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
-              <TableCell className="px-0">Social Media</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-          <TableRow>
-              <TableCell className="px-0"><span className="H5">Zoo Atlanta</span></TableCell>
-              <TableCell className="px-0" colspan="2">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
-              <TableCell className="px-0"><span className="H6">A+</span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-            </TableRow>
-
+      <Table>
+            <TableHead>
+              <TableRow className="bg-default">
+                <TableCell className="px-0">Nonprofit</TableCell>
+                <TableCell className="px-0">Like</TableCell>
+                <TableCell className="px-0" colspan="3">Summary</TableCell>
+                <TableCell className="px-0">Rating</TableCell>
+                <TableCell className="px-0">Status</TableCell>
+                <TableCell className="px-0">Scope</TableCell>
+                <TableCell className="px-0">Social Media</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
             <TableRow>
-              <TableCell className="px-0"><a href='https://www.rainforestcoalition.org/'  className="H5">Coalition for Rainforest Nations</a></TableCell>
-              <TableCell className="px-0" colspan="2">The Coalition for Rainforest Nations (CfRN or the ‘Coalition) assists tropical governments, communities and peoples responsibly manage their rainforests. Healthy rainforests protect against a changing climate, generate needed biodiversity and provide safe habitats.</TableCell>
-              <TableCell className="px-0"><span className="H6">B+</span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-            </TableRow>
+                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
+                <TableCell className="px-0" colspan="3"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+              </TableRow>
 
-          </TableBody>
-        </Table>
+            </TableBody>
+          </Table>
       </SimpleCard>
     </div>
   );
