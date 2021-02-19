@@ -83,19 +83,11 @@ const ReduceInequalities = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-          <TableRow>
-              <TableCell className="px-0"><span className="H5">Zoo Atlanta</span></TableCell>
-              <TableCell className="px-0" colspan="2">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
-              <TableCell className="px-0"><span className="H6">A+</span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-            </TableRow>
 
             <TableRow>
-              <TableCell className="px-0"><a href='https://www.rainforestcoalition.org/'  className="H5">Coalition for Rainforest Nations</a></TableCell>
-              <TableCell className="px-0" colspan="2">The Coalition for Rainforest Nations (CfRN or the ‘Coalition) assists tropical governments, communities and peoples responsibly manage their rainforests. Healthy rainforests protect against a changing climate, generate needed biodiversity and provide safe habitats.</TableCell>
-              <TableCell className="px-0"><span className="H6">B+</span></TableCell>
+              <TableCell className="px-0"><a href='https://bcnc.net/'  className="H5">Boston Chinatown Neighborhood Center</a></TableCell>
+              <TableCell className="px-0" colspan="2">The mission of Boston Chinatown Neighborhood Center is to ensure that the children, youth and families we serve have the resources and support they need to achieve greater economic success and social and physical well-being. Since 1969, BCNC has served as a vital link supporting the growing Asian immigrant and Asian American community of Greater Boston. Focusing on those most in need, over 70% of BCNC's constituents meet federal poverty guidelines.</TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>

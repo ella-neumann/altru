@@ -92,6 +92,24 @@ const ZeroHunger = () => {
               <TableCell className="px-0"></TableCell>
             </TableRow>
 
+            <TableRow>
+              <TableCell className="px-0"><a href='https://www.akroncantonfoodbank.org/'  className="H5">Akron-Canton Regional Foodbank</a></TableCell>
+              <TableCell className="px-0" colspan="2">The mission of the Akron-Canton Regional Foodbank is to lead a collaborative network that empowers people to experience healthy and hunger-free lives. We distribute food to feed people and we advocate, engage, and convene our community in the fight to end hunger.</TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell className="px-0"><a href='https://arminarm.org/'  className="H5">Arm in Arm</a></TableCell>
+              <TableCell className="px-0" colspan="2">Arm In Arm, formerly called The Crisis Ministry of Mercer County, provides practical, caring programs that address hunger prevention, homelessness prevention and workforce training. Through our three food pantries, mobile pantry, and home food delivery service, customers receive three days worth of food for each member of their family at each visit. Arm In Arm helps to stabilize critical housing situations through emergency financial assistance and housing stability case management. </TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+            </TableRow>
+
           </TableBody>
         </Table>
       </SimpleCard>

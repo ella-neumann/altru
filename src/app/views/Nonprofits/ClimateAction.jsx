@@ -120,6 +120,24 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
             </TableRow>
 
+            <TableRow>
+              <TableCell className="px-0"><a href='https://ncascades.org/'  className="H5">North Cascades Institute</a></TableCell>
+              <TableCell className="px-0" colspan="2">North Cascades Institute's mission is to inspire and empower environmental stewardship for all through transformative educational experiences in nature. Since 1986, we have helped connect people, nature and community through science, art, literature and the hands-on study of the natural and cultural history of the Pacific Northwest. Our goal is to help people of all ages experience and enjoy the mountains, rivers, forests, people and wildlife of the Pacific Northwest - so all will care for and protect this special place.</TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell className="px-0"><a href='https://www.wta.org/'  className="H5">Washington Trails Association</a></TableCell>
+              <TableCell className="px-0" colspan="2">Washington Trails Association (WTA) is the voice for hikers in Washington state. WTA protects hiking trails and wild lands, takes thousands of volunteers out to maintain trails, and promotes hiking as a healthy, fun way to explore Washington. WTA's volunteer trail maintenance program is among the largest in the nation, with 4,400 volunteers (25% of them youth) giving back more than 140,000 hours of service annually to the trails they love--and getting a good dose of personal reward in return. Washington Trails Association protects trails through lobbying and grassroots advocacy on issues that impact hikers, like trail funding and wilderness protection. We work closely with federal and state policymakers to advance hiker's interests in forest planning and new recreation projects.</TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+            </TableRow>
+
           </TableBody>
         </Table>
 

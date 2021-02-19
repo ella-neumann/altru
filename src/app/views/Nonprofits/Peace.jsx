@@ -83,19 +83,10 @@ const Peace = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-          <TableRow>
-              <TableCell className="px-0"><span className="H5">Zoo Atlanta</span></TableCell>
-              <TableCell className="px-0" colspan="2">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
-              <TableCell className="px-0"><span className="H6">A+</span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
-            </TableRow>
-
             <TableRow>
-              <TableCell className="px-0"><a href='https://www.rainforestcoalition.org/'  className="H5">Coalition for Rainforest Nations</a></TableCell>
-              <TableCell className="px-0" colspan="2">The Coalition for Rainforest Nations (CfRN or the ‘Coalition) assists tropical governments, communities and peoples responsibly manage their rainforests. Healthy rainforests protect against a changing climate, generate needed biodiversity and provide safe habitats.</TableCell>
-              <TableCell className="px-0"><span className="H6">B+</span></TableCell>
+              <TableCell className="px-0"><a href='https://www.theadvocatesforhumanrights.org/'  className="H5">The Advocates for Human Rights</a></TableCell>
+              <TableCell className="px-0" colspan="2">The Advocates for Human Rights (formerly Minnesota Advocates for Human Rights) is an organization dedicated to the promotion and protection of internationally recognized human rights. The Advocates provides investigative fact finding, direct legal representation, collaboration for education and training, and a broad distribution of publications. The Advocates has produced more than 81 reports documenting human rights practices in more than 22 countries. Every year, The Advocates educates over 8,000 students and community members on human rights issues, and provides legal representation and assistance to over 1,000 disadvantaged individuals and families.</TableCell>
+              <TableCell className="px-0"><span className="H6">A</span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>

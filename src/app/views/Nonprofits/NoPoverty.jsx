@@ -83,19 +83,11 @@ const NoPoverty = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-            <TableRow>
-                <TableCell className="px-0"><span className="H5">Zoo Atlanta</span></TableCell>
-                <TableCell className="px-0" colspan="2">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
-                <TableCell className="px-0"><span className="H6">A+</span></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-              </TableRow>
 
               <TableRow>
-                <TableCell className="px-0"><a href='https://www.rainforestcoalition.org/'  className="H5">Coalition for Rainforest Nations</a></TableCell>
-                <TableCell className="px-0" colspan="2">The Coalition for Rainforest Nations (CfRN or the ‘Coalition) assists tropical governments, communities and peoples responsibly manage their rainforests. Healthy rainforests protect against a changing climate, generate needed biodiversity and provide safe habitats.</TableCell>
-                <TableCell className="px-0"><span className="H6">B+</span></TableCell>
+                <TableCell className="px-0"><a href='https://www.bbbsps.org/'  className="H5">Big Brothers Big Sisters of Puget Sound</a></TableCell>
+                <TableCell className="px-0" colspan="2">Founded in 1957, Big Brothers Big Brothers Big Sisters of Puget Sound creates and supports 1-to-1 mentoring relationships that ignite the power and promise of youth. We work with children who deal with all kinds of challenges, including poverty, family instability, and marginalization. Big Brothers Big Sisters directly serves more than 2400 mentors and youth each year, building strong and supportive relationships to foster change in each person, family, and community.</TableCell>
+                <TableCell className="px-0"><span className="H6">A-</span></TableCell>
                 <TableCell className="px-0"></TableCell>
                 <TableCell className="px-0"></TableCell>
                 <TableCell className="px-0"></TableCell>
