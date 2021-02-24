@@ -9,6 +9,10 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
+
 
 const GoodHealth = () => {
   let list = [
@@ -107,19 +111,95 @@ const GoodHealth = () => {
             <TableRow>
               <TableCell className="px-0"><a href='https://www.activeminds.org/'  className="H5"><b>Active Minds</b></a></TableCell>
               <TableCell className="px-0" colspan="3">Active Minds is the nation's premier nonprofit organization supporting mental health awareness and education for young adults We are dedicated to saving lives and to building stronger families and communities. Through education, research, advocacy, and a focus on young adults ages 14–25, Active Minds is opening up the conversation about mental health and creating lasting change in the way mental health is talked about, cared for, and valued in the United States. What has guided and distinguished us from the start is a belief that young people will be the drivers of change.</TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn2" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn2");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
             </TableRow>
 
             <TableRow>
               <TableCell className="px-0"><a href='https://bikeworks.org/'  className="H5"><b>Bike Works Seattle</b></a></TableCell>
               <TableCell className="px-0" colspan="3">Bike Works promotes the bicycle as a vehicle for change to empower youth and build resilient communities. We believe that bicycling is an accessible form of transportation that promotes public health, builds confidence, encourages environmental stewardship and strengthens community. </TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn1" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn1");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
             </TableRow>
 
           </TableBody>
@@ -130,3 +210,16 @@ const GoodHealth = () => {
 };
 
 export default GoodHealth;
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}

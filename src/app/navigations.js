@@ -140,8 +140,8 @@ export const navigations = [
     ]
   },
   {
-    name: "Map",
+    name: "Share",
     icon: "add_location",
-    path: "/map"
+    path: "/share/share"
   }
 ];

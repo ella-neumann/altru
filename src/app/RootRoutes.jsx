@@ -13,7 +13,7 @@ import dragAndDropRoute from "./views/Drag&Drop/DragAndDropRoute";
 import SurveyRoute from "./views/Survey/SurveyRoute";
 
 import formsRoutes from "./views/forms/FormsRoutes";
-import mapRoutes from "./views/map/MapRoutes";
+import shareRoute from "./views/share/ShareRoute";
 
 import profileRoutes from "./views/account/ProfileRoutes";
 
@@ -40,7 +40,7 @@ const routes = [
   ...utilitiesRoutes,
   ...SurveyRoute,
   ...formsRoutes,
-  ...mapRoutes,
+  ...shareRoute,
   ...redirectRoute,
   ...profileRoutes,
   ...errorRoute

@@ -9,6 +9,9 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const NoPoverty = () => {
   let list = [
@@ -108,10 +111,48 @@ const NoPoverty = () => {
               <TableRow>
                 <TableCell className="px-0"><a href='https://www.bbbsps.org/'  className="H5"><b>Big Brothers Big Sisters of Puget Sound</b></a></TableCell>
                 <TableCell className="px-0" colspan="3">Founded in 1957, Big Brothers Big Brothers Big Sisters of Puget Sound creates and supports 1-to-1 mentoring relationships that ignite the power and promise of youth. We work with children who deal with all kinds of challenges, including poverty, family instability, and marginalization. Big Brothers Big Sisters directly serves more than 2400 mentors and youth each year, building strong and supportive relationships to foster change in each person, family, and community.</TableCell>
-                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"> 
+                  <Button id = "likeBtn" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
                 <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
                 <TableCell className="px-0"></TableCell>
                 <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
+                </TableCell>
               </TableRow>
 
             </TableBody>
@@ -123,3 +164,17 @@ const NoPoverty = () => {
 };
 
 export default NoPoverty;
+
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}
