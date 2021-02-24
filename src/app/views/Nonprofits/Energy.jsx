@@ -9,6 +9,8 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const Energy = () => {
   let list = [

@@ -10,6 +10,8 @@ import {
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
 import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const QualityEducation = () => {
   let list = [
@@ -97,7 +99,6 @@ const QualityEducation = () => {
                     style={{
                       position: "relative",
                       minWidth: "60%",
-                      left: "20%",
                     }}
                   >LIKE
                   </Button>
@@ -105,7 +106,26 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <input type="image" 
+                      id="ig" 
+                      src={ig_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "33%",
+                      }} 
+                    />
+                    <input type="image" 
+                      id="fb" 
+                      src={fb_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "60%",
+                      }} 
+                    />
+              </TableCell>
             </TableRow>
 
             <TableRow>
@@ -121,7 +141,6 @@ const QualityEducation = () => {
                     style={{
                       position: "relative",
                       minWidth: "60%",
-                      left: "20%",
                     }}
                   >LIKE
                   </Button>
@@ -129,7 +148,26 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <input type="image" 
+                      id="ig" 
+                      src={ig_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "33%",
+                      }} 
+                    />
+                    <input type="image" 
+                      id="fb" 
+                      src={fb_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "60%",
+                      }} 
+                    />
+              </TableCell>
             </TableRow>
 
             <TableRow>
@@ -145,7 +183,6 @@ const QualityEducation = () => {
                     style={{
                       position: "relative",
                       minWidth: "60%",
-                      left: "20%",
                     }}
                   >LIKE
                   </Button>
@@ -153,7 +190,26 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <input type="image" 
+                      id="ig" 
+                      src={ig_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "33%",
+                      }} 
+                    />
+                    <input type="image" 
+                      id="fb" 
+                      src={fb_icon}
+                      variant="contained"
+                      style={{
+                        position: "relative",
+                        maxWidth: "60%",
+                      }} 
+                    />
+              </TableCell>
             </TableRow>
 
           </TableBody>
