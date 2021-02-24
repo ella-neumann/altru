@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
 
 const Peace = () => {
   let list = [
@@ -86,7 +87,21 @@ const Peace = () => {
             <TableRow>
               <TableCell className="px-0"><a href='https://www.theadvocatesforhumanrights.org/'  className="H5"><b>The Advocates for Human Rights</b></a></TableCell>
               <TableCell className="px-0" colspan="3">The Advocates for Human Rights (formerly Minnesota Advocates for Human Rights) is an organization dedicated to the promotion and protection of internationally recognized human rights. The Advocates provides investigative fact finding, direct legal representation, collaboration for education and training, and a broad distribution of publications. The Advocates has produced more than 81 reports documenting human rights practices in more than 22 countries. Every year, The Advocates educates over 8,000 students and community members on human rights issues, and provides legal representation and assistance to over 1,000 disadvantaged individuals and families.</TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn1" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn1");
+                    }}
+                    style={{
+                      position: "relative",
+                      minWidth: "60%",
+                      left: "20%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -100,3 +115,16 @@ const Peace = () => {
 };
 
 export default Peace;
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}
