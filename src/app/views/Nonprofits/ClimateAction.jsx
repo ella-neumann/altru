@@ -123,7 +123,6 @@ const ClimateAction = () => {
                        changeLike("likeBtn1");
                     }}
                     style={{
-                      position: "relative",
                       minWidth: "60%",
                     }}
                   >LIKE
@@ -133,24 +132,30 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
-              <input type="image" 
-                      id="ig" 
-                      src={ig_icon}
-                      variant="contained"
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "33%",
+                        width: "50px",
                       }} 
                     />
-                    <input type="image" 
-                      id="fb" 
-                      src={fb_icon}
-                      variant="contained"
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "60%",
+                        width: "80px",
                       }} 
                     />
+                  </Button>
               </TableCell>
             </TableRow>
 
@@ -165,7 +170,6 @@ const ClimateAction = () => {
                        changeLike("likeBtn2");
                     }}
                     style={{
-                      position: "relative",
                       minWidth: "60%",
                     }}
                   >LIKE
@@ -175,24 +179,30 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
-              <input type="image" 
-                      id="ig" 
-                      src={ig_icon}
-                      variant="contained"
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "33%",
+                        width: "50px",
                       }} 
                     />
-                    <input type="image" 
-                      id="fb" 
-                      src={fb_icon}
-                      variant="contained"
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "60%",
+                        width: "80px",
                       }} 
                     />
+                  </Button>
               </TableCell>
             </TableRow>
 
@@ -207,7 +217,6 @@ const ClimateAction = () => {
                        changeLike("likeBtn3");
                     }}
                     style={{
-                      position: "relative",
                       minWidth: "60%",
                     }}
                   >LIKE
@@ -217,24 +226,30 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
-              <input type="image" 
-                      id="ig" 
-                      src={ig_icon}
-                      variant="contained"
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "33%",
+                        width: "50px",
                       }} 
                     />
-                    <input type="image" 
-                      id="fb" 
-                      src={fb_icon}
-                      variant="contained"
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "60%",
+                        width: "80px",
                       }} 
                     />
+                  </Button>
               </TableCell>
             </TableRow>
 
@@ -249,7 +264,6 @@ const ClimateAction = () => {
                        changeLike("likeBtn4");
                     }}
                     style={{
-                      position: "relative",
                       minWidth: "60%",
                     }}
                   >LIKE
@@ -259,24 +273,30 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
-              <input type="image" 
-                      id="ig" 
-                      src={ig_icon}
-                      variant="contained"
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "33%",
+                        width: "50px",
                       }} 
                     />
-                    <input type="image" 
-                      id="fb" 
-                      src={fb_icon}
-                      variant="contained"
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "60%",
+                        width: "80px",
                       }} 
                     />
+                  </Button>
               </TableCell>
             </TableRow>
 
@@ -291,7 +311,6 @@ const ClimateAction = () => {
                        changeLike("likeBtn5");
                     }}
                     style={{
-                      position: "relative",
                       minWidth: "60%",
                     }}
                   >LIKE
@@ -301,24 +320,30 @@ const ClimateAction = () => {
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
-              <input type="image" 
-                      id="ig" 
-                      src={ig_icon}
-                      variant="contained"
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "33%",
+                        width: "50px",
                       }} 
                     />
-                    <input type="image" 
-                      id="fb" 
-                      src={fb_icon}
-                      variant="contained"
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
                       style={{
                         position: "relative",
-                        maxWidth: "60%",
+                        width: "80px",
                       }} 
                     />
+                  </Button>
               </TableCell>
             </TableRow>
 
