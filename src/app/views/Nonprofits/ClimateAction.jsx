@@ -69,6 +69,31 @@ const ClimateAction = () => {
         />
       </div>
 
+      <SimpleCard title="13: Climate Action">
+        <center><img src="/assets/images/13ClimateAction.png" width="100" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 13: Take urgent action to combat climate change and its impacts</h4>
+
+        <ul>
+          <li>
+          2019 was the second warmest year on record and the end of the warmest decade (2010- 2019) ever recorded.  
+          </li>
+          <p> </p>
+          <li>
+          Carbon dioxide (CO2) levels and other greenhouse gases in the atmosphere rose to new records in 2019. 
+          </li>
+          <p> </p>
+          <li>
+          Climate change is affecting every country on every continent. It is disrupting national economies and affecting lives. Weather patterns are changing, sea levels are rising, and weather events are becoming more extreme.
+          </li>
+        </ul>
+        <p>Although greenhouse gas emissions are projected to drop about 6 per cent in 2020 due to travel bans and economic slowdowns resulting from the COVID-19 pandemic, this improvement is only temporary. Climate change is not on pause. Once the global economy begins to recover from the pandemic, emissions are expected to return to higher levels.</p>
+
+        <p>Saving lives and livelihoods requires urgent action to address both the pandemic and the climate emergency.</p>
+
+        <p>The Paris Agreement, adopted in 2015, aims to strengthen the global response to the threat of climate change by keeping a global temperature rise this century well below 2 degrees Celsius above pre-industrial levels. The agreement also aims to strengthen the ability of countries to deal with the impacts of climate change, through appropriate financial flows, a new technology framework and an enhanced capacity building framework.</p>
+
+      </SimpleCard>
 
       <SimpleCard title="Climate Action">
         <Table>

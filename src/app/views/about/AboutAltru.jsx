@@ -100,6 +100,8 @@ const AboutAltru = () => {
         />
       </div>
       <SimpleCard title="The Altru Nonprofit Rating Process">
+        <center><img src="/assets/images/logo.png" width="70" height="70" alt="company-logo" /></center>
+        <p></p>
         <h6>We want to find the most transparent organizations for you to connect with.</h6>
         <p>
           Understanding the Nonprofit Sector:

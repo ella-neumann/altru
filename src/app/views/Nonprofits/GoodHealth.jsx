@@ -69,13 +69,33 @@ const GoodHealth = () => {
         />
       </div>
 
+      <SimpleCard title="3: Good Health and Well-Being">
+        <center><img src="/assets/images/3Health.png" width="100" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 3: Ensure healthy lives and promote well-being for all at all ages</h4>
+
+        <ul>
+          <li>
+          Ensuring healthy lives and promoting well-being at all ages is essential to sustainable development. Currently, the world is facing a global health crisis unlike any other — COVID-19 is spreading human suffering, destabilizing the global economy and upending the lives of billions of people around the globe. 
+          </li>
+          <p></p>
+          <li>
+          Before the pandemic, major progress was made in improving the health of millions of people. Significant strides were made in increasing life expectancy and reducing some of the common killers associated with child and maternal mortality. But more efforts are needed to fully eradicate a wide range of diseases and address many different persistent and emerging health issues. By focusing on providing more efficient funding of health systems, improved sanitation and hygiene, and increased access to physicians, significant progress can be made in helping to save the lives of millions.
+          </li>
+          <p></p>
+          <li>
+          Health emergencies such as COVID-19 pose a global risk and have shown the critical need for preparedness. The United Nations Development Programme highlighted huge disparities in countries’ abilities to cope with and recover from the COVID-19 crisis. The pandemic provides a watershed moment for health emergency preparedness and for investment in critical 21st century public services. 
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Good Health and Well-Being">
         <Table>
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0" colspan="3">Summary</TableCell>
+              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Rating</TableCell>
               <TableCell className="px-0">Status</TableCell>
               <TableCell className="px-0">Scope</TableCell>
@@ -86,8 +106,8 @@ const GoodHealth = () => {
 
             <TableRow>
               <TableCell className="px-0"><a href='https://www.activeminds.org/'  className="H5"><b>Active Minds</b></a></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0" colspan="3">Active Minds is the nation's premier nonprofit organization supporting mental health awareness and education for young adults We are dedicated to saving lives and to building stronger families and communities. Through education, research, advocacy, and a focus on young adults ages 14–25, Active Minds is opening up the conversation about mental health and creating lasting change in the way mental health is talked about, cared for, and valued in the United States. What has guided and distinguished us from the start is a belief that young people will be the drivers of change.</TableCell>
+              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -95,8 +115,8 @@ const GoodHealth = () => {
 
             <TableRow>
               <TableCell className="px-0"><a href='https://bikeworks.org/'  className="H5"><b>Bike Works Seattle</b></a></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0" colspan="3">Bike Works promotes the bicycle as a vehicle for change to empower youth and build resilient communities. We believe that bicycling is an accessible form of transportation that promotes public health, builds confidence, encourages environmental stewardship and strengthens community. </TableCell>
+              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>

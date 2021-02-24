@@ -74,8 +74,8 @@ const Sanitation = () => {
             <TableHead>
               <TableRow className="bg-default">
                 <TableCell className="px-0">Nonprofit</TableCell>
-                <TableCell className="px-0">Like</TableCell>
                 <TableCell className="px-0" colspan="3">Summary</TableCell>
+                <TableCell className="px-0">Like</TableCell>
                 <TableCell className="px-0">Rating</TableCell>
                 <TableCell className="px-0">Status</TableCell>
                 <TableCell className="px-0">Scope</TableCell>

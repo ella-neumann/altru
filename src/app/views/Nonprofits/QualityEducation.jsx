@@ -74,8 +74,8 @@ const QualityEducation = () => {
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0" colspan="3">Summary</TableCell>
+              <TableCell className="px-0">Like</TableCell>
               <TableCell className="px-0">Rating</TableCell>
               <TableCell className="px-0">Status</TableCell>
               <TableCell className="px-0">Scope</TableCell>
@@ -105,8 +105,8 @@ const QualityEducation = () => {
 
             <TableRow>
               <TableCell className="px-0"><span className="H5"><a href='http://www.pageahead.org/'  className="H5"><b>Page Ahead Children's Literacy Program</b></a></span></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0" colspan="3">Guided by the fact that literacy is essential to lifelong success, Page Ahead provides new books and develops reading activities that empower at-risk children. Founded in 1990, Page Ahead Children's Literacy Program has given more than 3.5 million new books to more than 950,000 children through collaborations with schools, social service agencies, preschools, and early childhood programs across Washington.</TableCell>
+              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
               <TableCell className="px-0"></TableCell>

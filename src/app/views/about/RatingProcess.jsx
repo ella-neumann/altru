@@ -102,6 +102,7 @@ const AboutAltru = () => {
       
       <SimpleCard title="The Altru Nonprofit Rating Process">
         <center><img src="/assets/images/logo.png" width="70" height="70" alt="company-logo" /></center>
+        <p></p>
         <h3>We are constantly working to find the best nonprofits for you</h3>
         <ul>
           Altru rates nonprofits with letter grades based on their fiscal transparency, distribution of funds, and accountability. We know that your money and time is valuable, so we want you to make the biggest impact possible.
