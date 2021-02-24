@@ -70,7 +70,7 @@ const GenderEquality = () => {
       </div>
 
       <SimpleCard title="5: Gender Equality">
-        <center><img src="/assets/images/5GenderEquality.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/5GenderEquality.png" height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 5: Achieve gender equality and empower all women and girls</h4>
 

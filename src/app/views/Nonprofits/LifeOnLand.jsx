@@ -69,6 +69,30 @@ const LifeOnLand = () => {
         />
       </div>
 
+      <SimpleCard title="15: Life on Land">
+        <center><img src="/assets/images/15Land.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 15: Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss</h4>
+
+        <ul>
+          <li>
+          Nature is critical to our survival: nature provides us with our oxygen, regulates our weather patterns, pollinates our crops, produces our food, feed and fibre. But it is under increasing stress. Human activity has altered almost 75 per cent of the earth’s surface, squeezing wildlife and nature into an ever-smaller corner of the planet.
+          </li>
+          <p></p>
+          <li>
+          Around 1 million animal and plant species are threatened with extinction – many within decades – according to the 2019 Global Assessment Report on Biodiversity and Ecosystem Service. The report called for transformative changes to restore and protect nature. It found that the health of ecosystems on which we and all other species depend is deteriorating more rapidly than ever, affecting  the very foundations of our economies, livelihoods, food security, health and quality of life worldwide.
+          </li>
+          <p></p>
+          <li>
+          Deforestation and desertification – caused by human activities and climate change – pose major challenges to sustainable development and have affected the lives and livelihoods of millions of people. Forests are vitally important for sustaining life on Earth, and play a major role in the fight against climate change. And investing in land restoration is critical for improving livelihoods, reducing vulnerabilities, and reducing risks for the economy.
+          </li>
+          <p></p>
+          <li>
+          The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans. As we continue to encroach on fragile ecosystems, we bring humans into ever-greater contact with wildlife, enabling pathogens in wildlife to spill over to livestock and humans, increasing the risk of disease emergence and amplification.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Life On Land">
         <Table>
             <TableHead>

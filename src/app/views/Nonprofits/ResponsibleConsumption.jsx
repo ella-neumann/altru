@@ -69,6 +69,26 @@ const ResponsibleConsumption = () => {
         />
       </div>
 
+      <SimpleCard title="12: Responsible Consumption and Production">
+        <center><img src="/assets/images/12Responsible.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 12: Ensure sustainable consumption and production patterns</h4>
+
+        <ul>
+          <li>
+          Each year, an estimated one third of all food produced – equivalent to 1.3 billion tonnes worth around $1 trillion – ends up rotting in the bins of consumers and retailers, or spoiling due to poor transportation and harvesting practices.
+          </li>
+          <p></p>
+          <li>
+          If people worldwide switched to energy efficient light bulbs the world would save US$120 billion annually.
+          </li>
+          <p></p>
+          <li>
+          Should the global population reach 9.6 billion by 2050, the equivalent of almost three planets could be required to provide the natural resources needed to sustain current lifestyles.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Responsible Consumption, and Production">
       <Table>
             <TableHead>

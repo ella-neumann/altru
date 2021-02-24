@@ -70,7 +70,7 @@ const GoodHealth = () => {
       </div>
 
       <SimpleCard title="3: Good Health and Well-Being">
-        <center><img src="/assets/images/3Health.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/3Health.png" height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 3: Ensure healthy lives and promote well-being for all at all ages</h4>
 

@@ -70,7 +70,7 @@ const Energy = () => {
       </div>
 
       <SimpleCard title="7: Affordable and Clean Energy">
-        <center><img src="/assets/images/7Energy.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/7Energy.png"  height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 7: Ensure access to affordable, reliable, sustainable and modern energy</h4>
 

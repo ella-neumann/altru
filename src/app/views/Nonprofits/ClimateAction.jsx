@@ -70,7 +70,7 @@ const ClimateAction = () => {
       </div>
 
       <SimpleCard title="13: Climate Action">
-        <center><img src="/assets/images/13ClimateAction.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/13ClimateAction.png"  height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 13: Take urgent action to combat climate change and its impacts</h4>
 

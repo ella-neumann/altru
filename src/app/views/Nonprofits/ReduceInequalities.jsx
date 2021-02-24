@@ -69,6 +69,22 @@ const ReduceInequalities = () => {
         />
       </div>
 
+      <SimpleCard title="10: Reduced Inequalities">
+        <center><img src="/assets/images/10ReducedInequalities.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 10: Reduce inequality within and among countries</h4>
+
+        <ul>
+          <li>
+          Inequality within and among countries is a persistent cause for concern. Despite some positive signs toward reducing inequality in some dimensions, such as reducing relative income inequality in some countries and preferential trade status benefiting lower-income countries, inequality still persists.
+          </li>
+          <p></p>
+          <li>
+          Inequalities are also deepening for vulnerable populations in countries with weaker health systems and those facing existing humanitarian crises. Refugees and migrants, as well as indigenous peoples, older persons, people with disabilities and children are particularly at risk of being left behind. And hate speech targeting vulnerable groups is rising.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Reduced Inequalities">
         <Table>
           <TableHead>

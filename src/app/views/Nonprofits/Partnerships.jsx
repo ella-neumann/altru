@@ -69,6 +69,22 @@ const Partnerships = () => {
         />
       </div>
 
+      <SimpleCard title="17: Partnerships for the Goals">
+        <center><img src="/assets/images/17PartnershipsForGoals.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 17: Revitalize the global partnership for sustainable development</h4>
+
+        <ul>
+          <li>
+          The SDGs can only be realized with strong global partnerships and cooperation.
+          </li>
+          <p></p>
+          <li>
+          A successful development agenda requires inclusive partnerships — at the global, regional, national and local levels — built upon principles and values, and upon a shared vision and shared goals placing people and the planet at the centre.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Partnerships for Goals">
         <Table>
             <TableHead>

@@ -70,7 +70,7 @@ const DecentWork = () => {
       </div>
       
       <SimpleCard title="8: Decent Work and Economic Growth">
-        <center><img src="/assets/images/8DecentWork.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/8DecentWork.png"  height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 8: Promote inclusive and sustainable economic growth, employment and decent work for all</h4>
 

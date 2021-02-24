@@ -69,6 +69,30 @@ const Peace = () => {
         />
       </div>
 
+      <SimpleCard title="16: Peace, Justice and Strong Institutions">
+        <center><img src="/assets/images/16PeaceJustice.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 16: Promote just, peaceful and inclusive societies</h4>
+
+        <ul>
+          <li>
+          Conflict, insecurity, weak institutions and limited access to justice remain a great threat to sustainable development. 
+          </li>
+          <p></p>
+          <li>
+          The number of people fleeing war, persecution and conflict exceeded 70 million in 2018, the highest level recorded by the UN refugee agency (UNHCR) in almost 70 years. 
+          </li>
+          <p></p>
+          <li>
+          In 2019, the United Nations tracked 357 killings and 30 enforced disappearances of human rights defenders, journalists and trade unionists in 47 countries.
+          </li>
+          <p></p>
+          <li>
+          The births of around one in four children under age 5 worldwide are never officially recorded, depriving them of a proof of legal identity crucial for the protection of their rights and for access to justice and social services.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Peace, Justice, and Strong Institutions">
         <Table>
           <TableHead>

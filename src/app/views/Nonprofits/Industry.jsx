@@ -70,7 +70,7 @@ const Industry = () => {
       </div>
 
       <SimpleCard title="9: industry innovation and infrastructure">
-        <center><img src="/assets/images/9Industry.png" width="100" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/9Industry.png" height="120" alt="climate-action" /></center>
         <p></p>
         <h4>Goal 9: Build resilient infrastructure, promote sustainable industrialization and foster innovation</h4>
 
