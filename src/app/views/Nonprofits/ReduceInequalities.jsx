@@ -73,7 +73,7 @@ const ReduceInequalities = () => {
       </div>
 
       <SimpleCard title="10: Reduced Inequalities">
-        <center><img src="/assets/images/10ReducedInequalities.png" height="120" alt="climate-action" /></center>
+        <center><img src="/assets/images/10ReducedInequalities.png" height="120" alt="reduced-inequalities" /></center>
         <p></p>
         <h4>Goal 10: Reduce inequality within and among countries</h4>
 
