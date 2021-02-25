@@ -9,6 +9,9 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const NoPoverty = () => {
   let list = [
@@ -69,72 +72,109 @@ const NoPoverty = () => {
         />
       </div>
 
+      <SimpleCard title="1: No Poverty">
+        <center><img src="/assets/images/1NoPoverty.gif" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 1: End poverty in all its forms everywhere</h4>
+
+        <ul>
+          <li>
+          Globally, the number of people living in extreme poverty declined from 36 per cent in 1990 to 10 per cent in 2015. But the pace of change is decelerating and the COVID-19 crisis risks reversing decades of progress in the fight against poverty. New research published by the UNU World Institute for Development Economics Research warns that the economic fallout from the global pandemic could increase global poverty by as much as half a billion people, or 8% of the total human population. This would be the first time that poverty has increased globally in thirty years, since 1990.
+          </li>
+          <p></p>
+          <li>
+          More than 700 million people, or 10 per cent of the world population, still live in extreme poverty today, struggling to fulfil the most basic needs like health, education, and access to water and sanitation, to name a few. The majority of people living on less than $1.90 a day live in sub-Saharan Africa. Worldwide, the poverty rate in rural areas is 17.2 per cent—more than three times higher than in urban areas. 
+          </li>
+          <p></p>
+          <li>
+          For those who work, having a job does not guarantee a decent living. In fact, 8 per cent of employed workers and their families worldwide lived in extreme poverty in 2018. One out of five children live in extreme poverty. Ensuring social protection for all children and other vulnerable groups is critical to reduce poverty.
+          </li>
+          
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="No Poverty">
         <Table>
-          <TableHead>
-            <TableRow className="bg-default">
-              <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
-              <TableCell className="px-0">Social Media</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
-            <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
-              </TableCell>
-            </TableRow>
+            <TableHead>
+              <TableRow className="bg-default">
+                <TableCell className="px-0">Nonprofit</TableCell>
+                <TableCell className="px-0" colspan="3">Summary</TableCell>
+                <TableCell className="px-0">Like</TableCell>
+                <TableCell className="px-0">Rating</TableCell>
+                <TableCell className="px-0">Status</TableCell>
+                <TableCell className="px-0">Scope</TableCell>
+                <TableCell className="px-0">Social Media</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
 
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
+              <TableRow>
+                <TableCell className="px-0"><a href='https://www.bbbsps.org/'  className="H5"><b>Big Brothers Big Sisters of Puget Sound</b></a></TableCell>
+                <TableCell className="px-0" colspan="3">Founded in 1957, Big Brothers Big Brothers Big Sisters of Puget Sound creates and supports 1-to-1 mentoring relationships that ignite the power and promise of youth. We work with children who deal with all kinds of challenges, including poverty, family instability, and marginalization. Big Brothers Big Sisters directly serves more than 2400 mentors and youth each year, building strong and supportive relationships to foster change in each person, family, and community.</TableCell>
+                <TableCell className="px-0"> 
+                  <Button id = "likeBtn" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
                 </TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
 
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
+            </TableBody>
+          </Table>
+
       </SimpleCard>
     </div>
   );
 };
 
 export default NoPoverty;
+
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}

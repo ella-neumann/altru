@@ -9,7 +9,7 @@ import {
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
 
-const AboutAltru = () => {
+const AboutSDGs = () => {
   let list = [
     {
       className: ".m-0",
@@ -95,38 +95,22 @@ const AboutAltru = () => {
       <div className="mb-sm-30">
         <Breadcrumb
           routeSegments={[
-            { name: "About", path: "/about" },
+            { name: "About SDGs", path: "/sdg" },
           ]}
         />
       </div>
-      <SimpleCard title="The Altru Nonprofit Rating Process">
-        <center><img src="/assets/images/logo.png" width="70" height="70" alt="company-logo" /></center>
-        <p></p>
-        <h6>We want to find the most transparent organizations for you to connect with.</h6>
-        <p>
-          Understanding the Nonprofit Sector:
-        </p>
-        <ul>
-          <li>
-          In the United States, there are currently over 1.3 million nonprofits. Powering these nonprofits are 77 million Americans, or 30% of the US adult population, who volunteer their money, time, and energy to make the world a better place.
-          </li>
-          <p> </p>
-          <li>
-          Nonprofit donors, members of the U.S. Senate, and other nonprofit stakeholders are concerned about the lack of transparency in the nonprofit sector.
-          </li>
-          <p> </p>
-          <li>
-          According to Stanford Center on Longevity, many individuals do not volunteer time or money to nonprofits because they do not have enough information and most volunteer opportunities do not seem interesting.
-          </li>
-          <p> </p>
-          <li>
-          The Corporation for National and Community Service notes that nonprofit giving has grown by 4.1% year over year, with online donations up 12% since last year.
-          </li>
-        </ul>
+      <SimpleCard title="The United Nations Sustainable Development Goals">
+          <a href='https://sdgs.un.org/goals'><center><img src="/assets/images/sdgs.png" width="170" height="140" alt="sdgs" /></center></a>
+          <p>
+            <li>A collection of 17 interlinked global goals, Sustainable Develpment Goals (SDGs), designed to be a "blueprint to achieve a better and more sustainable future for all"</li>
 
+            <li>Set in 2015 by the United Nations General Assembly and are intended to be achieved by the year 2030.</li>
+          </p>  
+          
+          <p>The SGDs recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth – all while tackling climate change and working to preserve our oceans and forests.</p>
       </SimpleCard>
     </div>
   );
 };
 
-export default AboutAltru;
+export default AboutSDGs;

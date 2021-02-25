@@ -9,6 +9,10 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
+
 
 const GoodHealth = () => {
   let list = [
@@ -69,72 +73,153 @@ const GoodHealth = () => {
         />
       </div>
 
+      <SimpleCard title="3: Good Health and Well-Being">
+        <center><img src="/assets/images/3Health.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 3: Ensure healthy lives and promote well-being for all at all ages</h4>
+
+        <ul>
+          <li>
+          Ensuring healthy lives and promoting well-being at all ages is essential to sustainable development. Currently, the world is facing a global health crisis unlike any other — COVID-19 is spreading human suffering, destabilizing the global economy and upending the lives of billions of people around the globe. 
+          </li>
+          <p></p>
+          <li>
+          Before the pandemic, major progress was made in improving the health of millions of people. Significant strides were made in increasing life expectancy and reducing some of the common killers associated with child and maternal mortality. But more efforts are needed to fully eradicate a wide range of diseases and address many different persistent and emerging health issues. By focusing on providing more efficient funding of health systems, improved sanitation and hygiene, and increased access to physicians, significant progress can be made in helping to save the lives of millions.
+          </li>
+          <p></p>
+          <li>
+          Health emergencies such as COVID-19 pose a global risk and have shown the critical need for preparedness. The United Nations Development Programme highlighted huge disparities in countries’ abilities to cope with and recover from the COVID-19 crisis. The pandemic provides a watershed moment for health emergency preparedness and for investment in critical 21st century public services. 
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Good Health and Well-Being">
         <Table>
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
+              <TableCell className="px-0" colspan="3">Summary</TableCell>
               <TableCell className="px-0">Like</TableCell>
+              <TableCell className="px-0">Rating</TableCell>
+              <TableCell className="px-0">Status</TableCell>
+              <TableCell className="px-0">Scope</TableCell>
               <TableCell className="px-0">Social Media</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
+
             <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
+              <TableCell className="px-0"><a href='https://www.activeminds.org/'  className="H5"><b>Active Minds</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">Active Minds is the nation's premier nonprofit organization supporting mental health awareness and education for young adults We are dedicated to saving lives and to building stronger families and communities. Through education, research, advocacy, and a focus on young adults ages 14–25, Active Minds is opening up the conversation about mental health and creating lasting change in the way mental health is talked about, cared for, and valued in the United States. What has guided and distinguished us from the start is a belief that young people will be the drivers of change.</TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn2" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn2");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
               </TableCell>
             </TableRow>
 
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
-                </TableCell>
-              </TableRow>
-            ))}
+            <TableRow>
+              <TableCell className="px-0"><a href='https://bikeworks.org/'  className="H5"><b>Bike Works Seattle</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">Bike Works promotes the bicycle as a vehicle for change to empower youth and build resilient communities. We believe that bicycling is an accessible form of transportation that promotes public health, builds confidence, encourages environmental stewardship and strengthens community. </TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn1" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn1");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
+
           </TableBody>
         </Table>
-
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
       </SimpleCard>
     </div>
   );
 };
 
 export default GoodHealth;
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}

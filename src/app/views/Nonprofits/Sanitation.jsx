@@ -69,69 +69,42 @@ const Sanitation = () => {
         />
       </div>
 
+      <SimpleCard title="6: Clean Water and Sanitation">
+        <center><img src="/assets/images/6CleanWaterAndSanitation.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 6: Ensure access to water and sanitation for all</h4>
+
+        <p>While substantial progress has been made in increasing access to clean drinking water and sanitation, billions of people—mostly in rural areas—still lack these basic services. Worldwide, one in three people do not have access to safe drinking water, two out of five people do not have a basic hand-washing facility with soap and water, and more than 673 million people still practice open defecation.</p>
+        
+        <p>The COVID-19 pandemic has demonstrated the critical importance of sanitation, hygiene and adequate access to clean water for preventing and containing diseases. Hand hygiene saves lives. According to the World Health Organization, handwashing is one of the most effective actions you can take to reduce the spread of pathogens and prevent infections, including the COVID-19 virus. Yet billions of people still lack safe water sanitation, and funding is inadequate.</p>
+      </SimpleCard>
+
       <SimpleCard title="Clean Water and Sanitation">
-        <Table>
-          <TableHead>
-            <TableRow className="bg-default">
-              <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
-              <TableCell className="px-0">Social Media</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
-            <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
-              </TableCell>
-            </TableRow>
-
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
-                </TableCell>
+      <Table>
+            <TableHead>
+              <TableRow className="bg-default">
+                <TableCell className="px-0">Nonprofit</TableCell>
+                <TableCell className="px-0" colspan="3">Summary</TableCell>
+                <TableCell className="px-0">Like</TableCell>
+                <TableCell className="px-0">Rating</TableCell>
+                <TableCell className="px-0">Status</TableCell>
+                <TableCell className="px-0">Scope</TableCell>
+                <TableCell className="px-0">Social Media</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+            </TableHead>
+            <TableBody>
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
+                <TableCell className="px-0" colspan="3"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+              </TableRow>
 
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
+            </TableBody>
+          </Table>
       </SimpleCard>
     </div>
   );

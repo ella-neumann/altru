@@ -9,6 +9,9 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const Peace = () => {
   let list = [
@@ -69,72 +72,109 @@ const Peace = () => {
         />
       </div>
 
+      <SimpleCard title="16: Peace, Justice and Strong Institutions">
+        <center><img src="/assets/images/16PeaceJustice.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 16: Promote just, peaceful and inclusive societies</h4>
+
+        <ul>
+          <li>
+          Conflict, insecurity, weak institutions and limited access to justice remain a great threat to sustainable development. 
+          </li>
+          <p></p>
+          <li>
+          The number of people fleeing war, persecution and conflict exceeded 70 million in 2018, the highest level recorded by the UN refugee agency (UNHCR) in almost 70 years. 
+          </li>
+          <p></p>
+          <li>
+          In 2019, the United Nations tracked 357 killings and 30 enforced disappearances of human rights defenders, journalists and trade unionists in 47 countries.
+          </li>
+          <p></p>
+          <li>
+          The births of around one in four children under age 5 worldwide are never officially recorded, depriving them of a proof of legal identity crucial for the protection of their rights and for access to justice and social services.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Peace, Justice, and Strong Institutions">
         <Table>
           <TableHead>
             <TableRow className="bg-default">
               <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
+              <TableCell className="px-0" colspan="3">Summary</TableCell>
               <TableCell className="px-0">Like</TableCell>
+              <TableCell className="px-0">Rating</TableCell>
+              <TableCell className="px-0">Status</TableCell>
+              <TableCell className="px-0">Scope</TableCell>
               <TableCell className="px-0">Social Media</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
             <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
+              <TableCell className="px-0"><a href='https://www.theadvocatesforhumanrights.org/'  className="H5"><b>The Advocates for Human Rights</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">The Advocates for Human Rights (formerly Minnesota Advocates for Human Rights) is an organization dedicated to the promotion and protection of internationally recognized human rights. The Advocates provides investigative fact finding, direct legal representation, collaboration for education and training, and a broad distribution of publications. The Advocates has produced more than 81 reports documenting human rights practices in more than 22 countries. Every year, The Advocates educates over 8,000 students and community members on human rights issues, and provides legal representation and assistance to over 1,000 disadvantaged individuals and families.</TableCell>
+              <TableCell className="px-0">
+              <Button id = "likeBtn1" 
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                       changeLike("likeBtn1");
+                    }}
+                    style={{
+                      minWidth: "60%",
+                    }}
+                  >LIKE
+                  </Button>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={ig_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://instagram.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "50px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                      // onClick={() => {
+                      //   window.location.href = "https://facebook.com";
+                      // }}
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                      }} 
+                    />
+                  </Button>
               </TableCell>
             </TableRow>
 
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
-                </TableCell>
-              </TableRow>
-            ))}
           </TableBody>
         </Table>
-
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
       </SimpleCard>
     </div>
   );
 };
 
 export default Peace;
+
+function changeLike(btnID) {
+  var change  = document.getElementById(btnID);
+
+  if (change.innerHTML == "LIKE") {
+    change.innerHTML = "UNLIKE";
+    change.style.backgroundColor = "#6a75c9";
+  }
+  else {
+    change.innerHTML = "LIKE";
+    change.style.backgroundColor = "#7467ef";
+  }
+}

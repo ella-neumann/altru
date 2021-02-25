@@ -69,69 +69,48 @@ const Partnerships = () => {
         />
       </div>
 
+      <SimpleCard title="17: Partnerships for the Goals">
+        <center><img src="/assets/images/17PartnershipsForGoals.png" height="120" alt="climate-action" /></center>
+        <p></p>
+        <h4>Goal 17: Revitalize the global partnership for sustainable development</h4>
+
+        <ul>
+          <li>
+          The SDGs can only be realized with strong global partnerships and cooperation.
+          </li>
+          <p></p>
+          <li>
+          A successful development agenda requires inclusive partnerships — at the global, regional, national and local levels — built upon principles and values, and upon a shared vision and shared goals placing people and the planet at the centre.
+          </li>
+        </ul>
+      </SimpleCard>
+
       <SimpleCard title="Partnerships for Goals">
         <Table>
-          <TableHead>
-            <TableRow className="bg-default">
-              <TableCell className="px-0">Nonprofit</TableCell>
-              <TableCell className="px-0">Summary</TableCell>
-              <TableCell className="px-0">Rating</TableCell>
-              <TableCell className="px-0">Volunteer/Donation Status</TableCell>
-              <TableCell className="px-0">Scope</TableCell>
-              <TableCell className="px-0">Like</TableCell>
-              <TableCell className="px-0">Social Media</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {[...Array(7).keys()]
-              .slice(1)
-              .reverse()
-              .map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="px-0">h{item}</TableCell>
-                  <TableCell className="px-0 capitalize"></TableCell>
-                  <TableCell className="px-0 capitalize">
-                    {ReactHtmlParser(`<h${item}>h${item}</h${item}>`)}
-                  </TableCell>
-                </TableRow>
-              ))}
-            <TableRow>
-              <TableCell className="px-0">text-small</TableCell>
-              <TableCell className="px-0 capitalize">0.8125rem</TableCell>
-              <TableCell className="px-0 capitalize">
-                <span className="text-small">text-small</span>
-              </TableCell>
-            </TableRow>
-
-            {[13, 14, 16, 18, 20, 22, 24, 30, 32].map((item, index) => (
-              <TableRow key={index}>
-                <TableCell className="px-0">text-{item}</TableCell>
-                <TableCell className="px-0 capitalize">{item}px</TableCell>
-                <TableCell className="px-0 capitalize">
-                  {ReactHtmlParser(
-                    `<span class="text-${item}">text-${item}</span>`
-                  )}
-                </TableCell>
+            <TableHead>
+              <TableRow className="bg-default">
+                <TableCell className="px-0">Nonprofit</TableCell>
+                <TableCell className="px-0" colspan="3">Summary</TableCell>
+                <TableCell className="px-0">Like</TableCell>
+                <TableCell className="px-0">Rating</TableCell>
+                <TableCell className="px-0">Status</TableCell>
+                <TableCell className="px-0">Scope</TableCell>
+                <TableCell className="px-0">Social Media</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+            </TableHead>
+            <TableBody>
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
+                <TableCell className="px-0" colspan="3"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+                <TableCell className="px-0"></TableCell>
+              </TableRow>
 
-        <div className="py-2"></div>
-        {list.map((item, ind) => (
-          <div
-            key={ind}
-            className="flex items-center flex-wrap justify-between"
-          >
-            <code>{item.className}</code>
-            <div className="highlight-js">
-              <Highlight className="html">{`<div className="${item.className.replace(
-                ".",
-                ""
-              )}">${item.description}</div>`}</Highlight>
-            </div>
-          </div>
-        ))}
+            </TableBody>
+          </Table>
       </SimpleCard>
     </div>
   );

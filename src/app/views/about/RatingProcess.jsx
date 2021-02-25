@@ -89,7 +89,7 @@ const AboutAltru = () => {
        `
     }
   ];
-
+  
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
@@ -99,13 +99,22 @@ const AboutAltru = () => {
           ]}
         />
       </div>
+      
       <SimpleCard title="The Altru Nonprofit Rating Process">
+        <center><img src="/assets/images/logo.png" width="70" height="70" alt="company-logo" /></center>
+        <p></p>
         <h3>We are constantly working to find the best nonprofits for you</h3>
         <ul>
-          
+          Altru rates nonprofits with letter grades based on their fiscal transparency, distribution of funds, and accountability. We know that your money and time is valuable, so we want you to make the biggest impact possible.
         </ul>
-
-        
+        <h4>Let us break down what factors go into our Nonprofit ratings:</h4>
+        <ul>
+          <li>Fiscal Transparency: We want to make sure that the nonprofits are  willingness to publish and make available critical data about the organization. This information includes auditing explaining to stakeholders how funds are used. It is also important that organizations provide their tax returns and the IRS Form 990.</li>
+          <p> </p>
+          <li>Distribution of funds: Altru belives that it is important that nonprofits equitably distribute funds. This means that folks at the top of the company do not make absurd amounts of money, funds are not disappearing, or money is being used carelessly.</li>
+          <p> </p>
+          <li>Accountability: It is critical that you, the donator and volunteer, have full access to the practices and the ethics of the organizations that you support. We take accountability into account when scoring nonprofits.</li>
+        </ul>
       </SimpleCard>
     </div>
   );
