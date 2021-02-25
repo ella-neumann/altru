@@ -8,7 +8,7 @@ const SimpleCard = ({ children, title, subtitle, icon }) => {
       <div
         className={classList({
           "card-title": true,
-          "mb-4": !subtitle
+          "mb-4": !subtitle,
         })}
       >
         {title}

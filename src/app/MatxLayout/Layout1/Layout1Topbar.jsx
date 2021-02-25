@@ -80,28 +80,28 @@ class Layout1Topbar extends Component {
                 <Icon>menu</Icon>
               </IconButton>
 
-              <img
-                style={{
-                  maxHeight: "50px",
-                  position: "relative",
-                  bottom: "-30px",
-                }}
-                src="/assets/images/logo.png"
-              ></img>
-              <div className="hide-on-mobile">
-                <p
-                  style={{
-                    color: "white",
-                    fontSize: "24pt",
-                    position: "relative",
-                    left: "10px",
-                  }}
-                >
-                  Change the world with us!
-                </p>
+              <div style={{ display: "flex", marginTop: "5px" }}>
+                <div>
+                  <img
+                    style={{
+                      maxHeight: "50px",
+                    }}
+                    src="/assets/images/logo.png"
+                  ></img>
+                </div>
+                <div className="hide-on-mobile" style={{ maxHeight: "64px" }}>
+                  <div
+                    style={{
+                      color: "white",
+                      fontSize: "24pt",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Change the world with us!
+                  </div>
+                </div>
               </div>
             </div>
-
             <div className="flex items-center">
               <MatxSearchBox />
 
@@ -125,9 +125,9 @@ class Layout1Topbar extends Component {
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                   <Link className={classes.menuItem}to="/account/profile">
-                  <Icon> person </Icon>
-                  <span className="pl-4"> Profile </span>
+                  <Link className={classes.menuItem} to="/account/profile">
+                    <Icon> person </Icon>
+                    <span className="pl-4"> Profile </span>
                   </Link>
                 </MenuItem>
                 <MenuItem className={classes.menuItem}>
