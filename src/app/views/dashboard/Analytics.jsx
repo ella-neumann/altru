@@ -36,6 +36,33 @@ class Dashboard1 extends Component {
           <div
             style={{
               position: "absolute",
+              width: "99.9%",
+              height: "50px",
+              background: "white",
+            }}
+          >
+            <div
+              style={{
+                marginLeft: "10px",
+                marginTop: "10px",
+                fontSize: "20px",
+                display: "flex",
+                verticalAlign: "middle",
+              }}
+            >
+              <div>The nonprofit of the day is&nbsp;</div>
+              <a href="https://www.activeminds.org/">
+                <img
+                  src="https://www.activeminds.org/wp-content/uploads/2019/11/AM-stacked-color-for-homepage.png"
+                  style={{ height: "40px", marginTop: "-5px" }}
+                ></img>
+              </a>
+              &nbsp; donate today!
+            </div>
+          </div>
+          <div
+            style={{
+              position: "absolute",
               bottom: "5vh",
               left: "5vw",
               height: "20vh",
@@ -98,7 +125,7 @@ class Dashboard1 extends Component {
               ]}
             />
             <div>
-              <a href="https://sdgs.un.org/goals">
+              <a href="../../about/sdg">
                 <img
                   src="https://cdn.discordapp.com/attachments/798243218818990124/810636363916902452/1200px-Sustainable_Development_Goals_logo.png"
                   style={{

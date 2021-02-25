@@ -5,7 +5,7 @@ export const navigations = [
     icon: "dashboard",
   },
   {
-    name: "Nonprofits",
+    name: "Nonprofits by SDG",
     path: "/nonprofits",
     icon: "favorite",
     children: [
