@@ -20,15 +20,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Survey = () => {
+const SurveyPage3 = () => {
   const classes = useStyles();
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
         <Breadcrumb
           routeSegments={[
-            { name: "Survey", path: "/Survey" },
-            { name: "Page 1" },
+            { name: "Survey", path: "/SurveyPage3" },
+            { name: "Page 3" },
           ]}
         />
       </div>
@@ -46,24 +46,24 @@ const Survey = () => {
           </TableHead>
           <TableBody>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">1. Given the chance, you prefer to dontate your time to a charitable organzation or non-profit entity.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-1" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">11. Bringing in jobs for everyone to bolster the economy is something you often think about.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-11" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">2. Given the chance, you prefer to donate your money to a chartiable organzation or non-profit entity.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-2" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">12. You want to help strengthen the infrastructure and foster an inclusive innovation environment.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-12" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">3. You favor local charities, rather than national or multi-national organizations.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-3" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">13. You would like to reduce inequalities, regardless of race, religion, or socio-economic status.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-13" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">4. You have a passion for helping those less fortunate than you.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-4" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">14. You would like to help build strong sustainable communities.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-14" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">5. You have a desire to work with food banks or meal kitchens.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-5" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">15. You have wanted to help reduce waste and promote responsible consumption of products.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-15" /></TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -72,18 +72,18 @@ const Survey = () => {
         variant="contained"
         color="primary"
         onClick={() => {
-          window.location.href = "../surveypage2";
+          window.location.href = "../surveypage4";
         }}
         style={{
-          position: "fixed",
-          minWidth: "10%",
-          bottom: 200,
-          right: 750
-        }}
-      >Next
+            position: "fixed",
+            minWidth: "10%",
+            bottom: 200,
+            right: 750
+          }}
+        >Next
       </Button>
     </div>
   );
 };
 
-export default Survey;
+export default SurveyPage3;
