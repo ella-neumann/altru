@@ -61,7 +61,7 @@ class LikertButtons extends React.Component {
             return (
               <Form.Check
                 type="radio"
-                label={option.label}
+                // label={option.label}
                 id={option.id + this.props.questionId}
                 onChange={this.handleChange.bind(this)}
                 checked={

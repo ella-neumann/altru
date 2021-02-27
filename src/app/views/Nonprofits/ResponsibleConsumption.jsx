@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import LikeButton from './LikeButton';
 
 const ResponsibleConsumption = () => {
   let list = [

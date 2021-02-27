@@ -12,6 +12,7 @@ import Highlight from "react-highlight";
 import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import LikeButton from './LikeButton';
 
 const QualityEducation = () => {
   let list = [
@@ -110,17 +111,7 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H5"><a href='https://www.acescholarships.org/'  className="H5"><b>Ace Scholarships</b></a></span></TableCell>
               <TableCell className="px-0"colspan="3">Provide children of low-income families with scholarships to private schools in grades K-12, and to advocate for expanded school choice.</TableCell>
               <TableCell className="px-0">
-              <Button id = "likeBtn1" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn1");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+              <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -157,17 +148,7 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H5"><a href='AdoptAClassroom.org'  className="H5"><b>AdoptAClassroom.org</b></a></span></TableCell>
               <TableCell className="px-0"colspan="3">AdoptAClassroom.org gives teachers a hand by providing needed classroom materials so that students can succeed.</TableCell>
               <TableCell className="px-0">
-              <Button id = "likeBtn2" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn2");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+              <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -204,17 +185,7 @@ const QualityEducation = () => {
               <TableCell className="px-0"><span className="H5"><a href='http://www.pageahead.org/'  className="H5"><b>Page Ahead Children's Literacy Program</b></a></span></TableCell>
               <TableCell className="px-0" colspan="3">Guided by the fact that literacy is essential to lifelong success, Page Ahead provides new books and develops reading activities that empower at-risk children. Founded in 1990, Page Ahead Children's Literacy Program has given more than 3.5 million new books to more than 950,000 children through collaborations with schools, social service agencies, preschools, and early childhood programs across Washington.</TableCell>
               <TableCell className="px-0">
-              <Button id = "likeBtn3" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn3");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+              <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -255,16 +226,3 @@ const QualityEducation = () => {
 };
 
 export default QualityEducation;
-
-function changeLike(btnID) {
-  var change  = document.getElementById(btnID);
-
-  if (change.innerHTML == "LIKE") {
-    change.innerHTML = "UNLIKE";
-    change.style.backgroundColor = "#6a75c9";
-  }
-  else {
-    change.innerHTML = "LIKE";
-    change.style.backgroundColor = "#7467ef";
-  }
-}

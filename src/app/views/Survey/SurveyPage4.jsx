@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Survey = () => {
+const SurveyPage4 = () => {
   const classes = useStyles();
   return (
     <div className="m-sm-30">
@@ -28,7 +28,7 @@ const Survey = () => {
         <Breadcrumb
           routeSegments={[
             { name: "Survey", path: "/Survey" },
-            { name: "Page 1" },
+            { name: "Page 4" },
           ]}
         />
       </div>
@@ -46,24 +46,24 @@ const Survey = () => {
           </TableHead>
           <TableBody>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">1. Given the chance, you prefer to dontate your time to a charitable organzation or non-profit entity.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-1" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">16. You have noticed that the call to action for climate change has fallen short of your expectations and want to do more.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-16" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">2. Given the chance, you prefer to donate your money to a chartiable organzation or non-profit entity.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-2" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">17. You are often concerned about ocean life and want to help reduce our negative impacts on the ocean.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-17" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">3. You favor local charities, rather than national or multi-national organizations.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-3" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">18. You are often concerned about life on land and want to help reduce our negative impacts on the affected ecosystems.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-18" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">4. You have a passion for helping those less fortunate than you.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-4" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">19. You want to help improve peace and social justice, at all levels, locally or around the world.</font> </b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-19" /></TableCell>
             </TableRow>
             <TableRow style={{justifyContent: "space-evenly" }}>
-              <TableCell className="px-0" colspan="8"><b><font size="4">5. You have a desire to work with food banks or meal kitchens.</font></b></TableCell>
-              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-5" /></TableCell>
+              <TableCell className="px-0" colspan="8"><b><font size="4">20. You want to get involved with each of the implimentations of the Sustainable Development Goals.</font></b></TableCell>
+              <TableCell className="px-0" colspan="11"><LikertButtons questionId="q-20" /></TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -72,7 +72,7 @@ const Survey = () => {
         variant="contained"
         color="primary"
         onClick={() => {
-          window.location.href = "../surveypage2";
+          window.location.href = "../surveyresults";
         }}
         style={{
           position: "fixed",
@@ -80,10 +80,10 @@ const Survey = () => {
           bottom: 200,
           right: 750
         }}
-      >Next
+        >Submit
       </Button>
     </div>
   );
 };
 
-export default Survey;
+export default SurveyPage4;

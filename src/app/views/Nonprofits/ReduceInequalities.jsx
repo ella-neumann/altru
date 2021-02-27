@@ -12,6 +12,7 @@ import Highlight from "react-highlight";
 import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import LikeButton from './LikeButton';
 
 const ReduceInequalities = () => {
   let list = [
@@ -107,17 +108,7 @@ const ReduceInequalities = () => {
               <TableCell className="px-0"><a href='https://bcnc.net/'  className="H5"><b>Boston Chinatown Neighborhood Center</b></a></TableCell>
               <TableCell className="px-0" colspan="3">The mission of Boston Chinatown Neighborhood Center is to ensure that the children, youth and families we serve have the resources and support they need to achieve greater economic success and social and physical well-being. Since 1969, BCNC has served as a vital link supporting the growing Asian immigrant and Asian American community of Greater Boston. Focusing on those most in need, over 70% of BCNC's constituents meet federal poverty guidelines.</TableCell>
               <TableCell className="px-0">
-              <Button id = "likeBtn" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+              <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0"></TableCell>
@@ -158,17 +149,4 @@ const ReduceInequalities = () => {
 };
 
 export default ReduceInequalities;
-
-function changeLike(btnID) {
-  var change  = document.getElementById(btnID);
-
-  if (change.innerHTML == "LIKE") {
-    change.innerHTML = "UNLIKE";
-    change.style.backgroundColor = "#6a75c9";
-  }
-  else {
-    change.innerHTML = "LIKE";
-    change.style.backgroundColor = "#7467ef";
-  }
-}
 
