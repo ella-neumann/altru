@@ -5,6 +5,11 @@ export const navigations = [
     icon: "dashboard",
   },
   {
+    name: "Survey",
+    path: "/Survey",
+    icon: "assignment",
+  },
+  {
     name: "Nonprofits by SDG",
     path: "/nonprofits",
     icon: "favorite",

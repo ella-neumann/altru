@@ -11,6 +11,7 @@ import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import LikeButton from './LikeButton';
 
 const Energy = () => {
   let list = [

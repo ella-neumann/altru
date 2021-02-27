@@ -12,6 +12,7 @@ import Highlight from "react-highlight";
 import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import LikeButton from './LikeButton';
 
 const DecentWork = () => {
   let list = [
@@ -109,17 +110,7 @@ const DecentWork = () => {
                 <TableCell className="px-0"><span className="H5"><a href='www.anitaborg.org'  className="H5"><b>Anitab.org </b></a></span></TableCell>
                 <TableCell className="px-0" colspan="3">At AnitaB.org, we envision a future where the people who imagine and build technology mirror the people and societies for whom they build it. We connect, inspire, and guide women in computing, and organizations that view technology innovation as a strategic imperative.</TableCell>
                 <TableCell className="px-0">
-                <Button id = "likeBtn1" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn1");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+                <LikeButton></LikeButton>
                 </TableCell>
                 <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
                 <TableCell className="px-0"></TableCell>
@@ -156,17 +147,7 @@ const DecentWork = () => {
                 <TableCell className="px-0"><span className="H5"><a href='www.capitalidea.org'  className="H5"><b>Capital IDEA </b></a></span></TableCell>
                 <TableCell className="px-0" colspan="3">Founded in 1999, Capital IDEA offers financial support to adults pursuing higher education. Our mission is to lift working adults out of poverty and into living wage careers through education. Capital IDEA accomplishes this by connecting with local employers and supporting adults in targeted, career oriented fields. We aim to help our participants overcome common barriers that prevent low-income adults from entering skilled occupations. The inability to pay for the necessary education is only one barrier. </TableCell>
                 <TableCell className="px-0">
-                <Button id = "likeBtn2" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn2");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+                <LikeButton></LikeButton>
                 </TableCell>
                 <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
                 <TableCell className="px-0"></TableCell>
@@ -203,17 +184,7 @@ const DecentWork = () => {
                 <TableCell className="px-0"><span className="H5"><a href='https://www.dfshouston.org/'  className="H5"><b>Dress for Success Houston </b></a></span></TableCell>
                 <TableCell className="px-0" colspan="3">Dress for Success Houston has been addressing the needs of women in the Greater Houston area for the past 20 years. Our purpose is to offer long-lasting solutions that enable women to break the cycle of poverty. Dress for Success Houston is part of a global movement for change, empowering women to obtain safer and better futures. We provide each client with professional attire to secure employment, and we are about much more than simply a new outfit.</TableCell>
                 <TableCell className="px-0">
-                <Button id = "likeBtn3" 
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                       changeLike("likeBtn3");
-                    }}
-                    style={{
-                      minWidth: "60%",
-                    }}
-                  >LIKE
-                  </Button>
+                <LikeButton></LikeButton>
                 </TableCell>
                 <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
                 <TableCell className="px-0"></TableCell>
@@ -255,16 +226,3 @@ const DecentWork = () => {
 };
 
 export default DecentWork;
-
-function changeLike(btnID) {
-  var change  = document.getElementById(btnID);
-
-  if (change.innerHTML == "LIKE") {
-    change.innerHTML = "UNLIKE";
-    change.style.backgroundColor = "#6a75c9";
-  }
-  else {
-    change.innerHTML = "LIKE";
-    change.style.backgroundColor = "#7467ef";
-  }
-}
