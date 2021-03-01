@@ -280,29 +280,6 @@ const MatxCustomizer = props => {
                   ))}
                 </div>
               </div>
-
-              <div className="mb-4 mx-3">
-                <div className="text-muted mb-4">Footer theme</div>
-                <div className="colors">
-                  {topbarThemes.map((color, i) => (
-                    <Tooltip key={i} title={color} placement="top">
-                      <div
-                        className="color"
-                        onClick={() => handleChange("footer.theme", color)}
-                        style={{
-                          backgroundColor:
-                            themeColors[color].palette.primary.main
-                        }}
-                      >
-                        {settings.footer.theme === color && <Icon>done</Icon>}
-                        <div
-                          className={settings.themes[color].palette.type}
-                        ></div>
-                      </div>
-                    </Tooltip>
-                  ))}
-                </div>
-              </div>
             </Scrollbar>
           </div>
         </ThemeProvider>

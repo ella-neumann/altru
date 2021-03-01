@@ -95,36 +95,6 @@ const Layout1Customizer = ({ settings, handleChange, handleControlChange }) => {
         </FormControl>
       </div>
 
-      <div className="mb-8 mx-3">
-        <div className="text-muted mb-8">Sidebar background image</div>
-
-        <div className="layout-boxes sidebar-bg">
-          <Grid container spacing={3}>
-            {sidebarBG.map((bg, i) => (
-              <Grid item lg={4} key={i}>
-                <BadgeSelected
-                  color="primary"
-                  className="layout-box mr-4"
-                  badgeContent={<Icon>done</Icon>}
-                  invisible={
-                    settings.layout1Settings.leftSidebar.bgImgURL !== bg
-                  }
-                >
-                  <Paper
-                    onClick={() =>
-                      handleChange("layout1Settings.leftSidebar.bgImgURL", bg)
-                    }
-                    className="h-160"
-                  >
-                    <img src={bg} alt="" />
-                  </Paper>
-                </BadgeSelected>
-              </Grid>
-            ))}
-          </Grid>
-        </div>
-      </div>
-
       {/* <div className="mb-8 mx-3">
         <div className="text-muted">Sidebar background opacity</div>
         <Slider
