@@ -107,7 +107,7 @@ class Layout1Topbar extends Component {
 
               <NotificationBar />
 
-              <ShoppingCart></ShoppingCart>
+              {/* <ShoppingCart></ShoppingCart> */}
 
               <MatxMenu
                 menuButton={

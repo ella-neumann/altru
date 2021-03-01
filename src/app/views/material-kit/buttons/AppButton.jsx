@@ -3,13 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Icon, Button, IconButton, Fab } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   button: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
   },
   input: {
-    display: "none"
-  }
+    display: "none",
+  },
 }));
 
 export default function AppButton() {
@@ -21,7 +21,7 @@ export default function AppButton() {
         <Breadcrumb
           routeSegments={[
             { name: "Material", path: "/material" },
-            { name: "Buttons" }
+            { name: "Buttons" },
           ]}
         />
       </div>
@@ -159,13 +159,6 @@ export default function AppButton() {
           aria-label="Add an alarm"
         >
           <Icon>alarm</Icon>
-        </IconButton>
-        <IconButton
-          color="primary"
-          className={classes.button}
-          aria-label="Add to shopping cart"
-        >
-          <Icon>add_shopping_cart</Icon>
         </IconButton>
         <input
           accept="image/*"
