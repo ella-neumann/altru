@@ -77,46 +77,6 @@ const MatxCustomizer = props => {
         }
       }
     },
-    {
-      name: "Dark Theme",
-      thumbnail: "/assets/images/screenshots/layout3-customizer.png",
-      isPro: false,
-      options: {
-        activeLayout: "layout1",
-        activeTheme: "purpleDark1",
-        layout1Settings: {
-          leftSidebar: {
-            theme: "slateDark1",
-            bgOpacity: 0.92
-          },
-          topbar: {
-            theme: "purpleDark1",
-            fixed: false
-          }
-        },
-        footer: {
-          theme: "slateDark1"
-        }
-      }
-    },
-    {
-      name: "Horizontal Navigation",
-      thumbnail: "/assets/images/screenshots/layout4-customizer.png",
-      isPro: true,
-      options: {
-        activeLayout: "layout2",
-        activeTheme: "purple1",
-        layout2Settings: {
-          mode: "full"
-          // topbar: {
-          //   theme: "slateDark1"
-          // }
-        },
-        footer: {
-          theme: "slateDark1"
-        }
-      }
-    }
   ];
 
   const updateSettings = newSettings => {
