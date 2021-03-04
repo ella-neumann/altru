@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
 import Highlight from "react-highlight";
+import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
@@ -103,16 +104,123 @@ const Energy = () => {
                 <TableCell className="px-0">Social Media</TableCell>
               </TableRow>
             </TableHead>
+
+        
             <TableBody>
             <TableRow>
-                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
-                <TableCell className="px-0" colspan="3"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-              </TableRow>
+                <TableCell className="px-0"><span className="H5"><a href='http://energycoalition.org/'  className="H5"><b>Energy Coalition</b></a></span></TableCell>
+                <TableCell className="px-0" colspan="3">We empower communities to leap into the future of clean energy! By bringing ideas, technology, and expertise to public agencies, businesses, educators and more, we’re creating the building blocks for a new energy economy. We envision a future in which communities are energy-producing networks and clean energy is affordable and accessible for everyone. </TableCell>
+                <TableCell className="px-0">
+                <LikeButton></LikeButton>
+                </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
+                <TableCell className="px-0">
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://energycoalition.org/work-with-us/";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/theenergycoalition/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/The-Energy-Coalition-108158244274950";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>              
+            
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><a href='http://www.energyoutwest.org/'  className="H5"><b>Energy OutWest</b></a></span></TableCell>
+                <TableCell className="px-0" colspan="3">Energy OutWest, Inc. (EOW) is an independent, nonprofit charitable organization (501c3) devoted to the promotion and advancement of the technical capacity of the region’s energy and environmental services network through education and training in energy conservation, renewable practices, and technologies. Our goal is to have our membership provide quality service to all clients. Every other year Energy OutWest organizes and delivers a regional conference that features the latest technical and organizational advances in the weatherization profession.</TableCell>
+                <TableCell className="px-0">
+                <LikeButton></LikeButton>
+                </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+                <TableCell className="px-0">
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="National" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/energyoutwest/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/EnergyOutWest";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
+
+
+
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><a href='https://www.elevatenp.org/'  className="H5"><b>Elevate Energy</b></a></span></TableCell>
+                <TableCell className="px-0" colspan="3">Elevate wants everyone to have access to clean and affordable heat, power, and water in their homes and communities. We’re centering equity in the climate conversation.</TableCell>
+                <TableCell className="px-0">
+                <LikeButton></LikeButton>
+                </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>B</b></span></TableCell>
+                <TableCell className="px-0">
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/ElevateNPOrg";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
 
             </TableBody>
           </Table>

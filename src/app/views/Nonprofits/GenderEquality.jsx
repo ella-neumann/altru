@@ -122,35 +122,59 @@ const GenderEquality = () => {
                   <LikeButton></LikeButton>
                   </TableCell>
                   <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-                  <TableCell className="px-0"></TableCell>
-                  <TableCell className="px-0"></TableCell>
                   <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://support.madre.org/give/327715/#!/donation/checkout";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.madre.org/volunteer";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Global" /></TableCell>
+              <TableCell className="px-0">
                   <Button>
                     <img 
                       src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/madrespeaks/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/madre.org";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
-                  </TableCell>
-              </TableRow>
+              </TableCell>
+            </TableRow>
 
               <TableRow>
                   <TableCell className="px-0"><span className="H5"><a href='www.beyondborders.net'  className="H5"><b>Beyond Borders </b></a></span></TableCell>
@@ -159,109 +183,171 @@ const GenderEquality = () => {
                   <LikeButton></LikeButton>
                   </TableCell>
                   <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-                  <TableCell className="px-0"></TableCell>
-                  <TableCell className="px-0"></TableCell>
                   <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://beyondborders.net/donate/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Global" /></TableCell>
+              <TableCell className="px-0">
                   <Button>
                     <img 
                       src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/madrespeaks/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/madre.org";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
-                  </TableCell>
-              </TableRow>
+              </TableCell>
+            </TableRow>
 
-              <TableRow>
-                  <TableCell className="px-0"><span className="H5"><a href='www.anitaborg.org'  className="H5"><b>Anitab.org </b></a></span></TableCell>
-                  <TableCell className="px-0" colspan="3">At AnitaB.org, we envision a future where the people who imagine and build technology mirror the people and societies for whom they build it. We connect, inspire, and guide women in computing, and organizations that view technology innovation as a strategic imperative.</TableCell>
-                  <TableCell className="px-0">
-                  <LikeButton></LikeButton>
-                  </TableCell>
-                  <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
-                  <TableCell className="px-0"></TableCell>
-                  <TableCell className="px-0"></TableCell>
-                  <TableCell className="px-0">
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><a href='www.anitaborg.org'  className="H5"><b>Anitab.org </b></a></span></TableCell>
+                <TableCell className="px-0" colspan="3">At AnitaB.org, we envision a future where the people who imagine and build technology mirror the people and societies for whom they build it. We connect, inspire, and guide women in computing, and organizations that view technology innovation as a strategic imperative.</TableCell>
+                <TableCell className="px-0">
+                <LikeButton></LikeButton>
+                </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+                <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://anitab.org/donate/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://anitab.org/volunteer/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "60px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
                   <Button>
                     <img 
                       src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/anitab_org/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/AnitaB.0rg/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
-                  </TableCell>
-                </TableRow>
+              </TableCell>
+            </TableRow>
 
-                <TableRow>
-                    <TableCell className="px-0"><span className="H5"><a href='https://www.dfshouston.org/'  className="H5"><b>Dress for Success Houston </b></a></span></TableCell>
-                    <TableCell className="px-0" colspan="3">Dress for Success Houston has been addressing the needs of women in the Greater Houston area for the past 20 years. Our purpose is to offer long-lasting solutions that enable women to break the cycle of poverty. Dress for Success Houston is part of a global movement for change, empowering women to obtain safer and better futures. We provide each client with professional attire to secure employment, and we are about much more than simply a new outfit.</TableCell>
-                    <TableCell className="px-0">
-                    <LikeButton></LikeButton>
-                    </TableCell>
-                    <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
-                    <TableCell className="px-0"></TableCell>
-                    <TableCell className="px-0"></TableCell>
-                    <TableCell className="px-0">
-                    <Button>
+            <TableRow>
+                <TableCell className="px-0"><span className="H5"><a href='https://dressforsuccess.org/'  className="H5"><b>Dress for Success</b></a></span></TableCell>
+                <TableCell className="px-0" colspan="3">Dress for Success is an international not-for-profit organization that empowers women to achieve economic independence by providing a network of support, professional attire and the development tools to help women thrive in work and in life. Since starting operations in 1997, Dress for Success has expanded to over 150 cities in 30 countries. To date, Dress for Success has helped more than one million women work towards self-sufficiency.</TableCell>
+                <TableCell className="px-0">
+                <LikeButton></LikeButton>
+                </TableCell>
+                <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+                <TableCell className="px-0">
+              <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://yourhourherpower.org/donate";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://dressforsuccess.org/get-involved/volunteer/";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/dressforsuccess/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/DressForSuccess/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
-                    </TableCell>
-                </TableRow>
+              </TableCell>
+            </TableRow>
 
                 <TableRow>
                   <TableCell className="px-0"><span className="H5"><a href='https://www.equalitynow.org/'  className="H5"><b>Equality Now </b></a></span></TableCell>
@@ -270,35 +356,59 @@ const GenderEquality = () => {
                   <LikeButton></LikeButton>
                   </TableCell>
                   <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
-                  <TableCell className="px-0"></TableCell>
-                  <TableCell className="px-0"></TableCell>
                   <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.equalitynow.org/donate";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://dressforsuccess.org/get-involved/volunteer/";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Global" /></TableCell>
+              <TableCell className="px-0">
                   <Button>
                     <img 
                       src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/equalitynoworg/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/equalitynoworg";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
-                  </TableCell>
-                </TableRow>
+              </TableCell>
+            </TableRow>
 
 
             </TableBody>

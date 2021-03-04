@@ -116,30 +116,54 @@ const GoodHealth = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://give.wta.org/give/311808/#!/donation/checkout";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.wta.org/get-involved/volunteer";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/washingtontrails/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/washingtontrails";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -153,30 +177,54 @@ const GoodHealth = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://bikeworks.org/donate/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://bikeworks.org/adult-classes/volunteering-community-service/";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/bikeworks206/?hl=en";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/BikeWorksSeattle/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>

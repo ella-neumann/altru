@@ -8,8 +8,11 @@ import {
   TableRow
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import { Button } from "@material-ui/core";
 import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const LifeOnLand = () => {
   let list = [
@@ -108,6 +111,7 @@ const LifeOnLand = () => {
               </TableRow>
             </TableHead>
             <TableBody>
+
             <TableRow>
                 <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
                 <TableCell className="px-0" colspan="3"></TableCell>

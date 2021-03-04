@@ -8,8 +8,11 @@ import {
   TableRow
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import { Button } from "@material-ui/core";
 import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const Partnerships = () => {
   let list = [

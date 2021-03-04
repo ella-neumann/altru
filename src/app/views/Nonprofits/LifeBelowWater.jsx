@@ -8,8 +8,11 @@ import {
   TableRow
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import { Button } from "@material-ui/core";
 import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const LifeBelowWater = () => {
   let list = [
@@ -104,15 +107,118 @@ const LifeBelowWater = () => {
               </TableRow>
             </TableHead>
             <TableBody>
+
             <TableRow>
-                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
-                <TableCell className="px-0" colspan="3"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-              </TableRow>
+              <TableCell className="px-0"><a href='https://www.savebuzzardsbay.org/'  className="H5"><b>Buzzards Bay Coalition</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">Founded in 1987, The Buzzards Bay Coalition is a membership-supported organization dedicated to the restoration, protection and sustainable use and enjoyment of our irreplaceable Bay and its watershed. The Coalition works to improve the health of the Bay ecosystem for all through education, conservation, research and advocacy. The Coalition strives for a Bay shoreline defined by safe swimming beaches, open shellfish beds, and stretches of scenic spaces for all to enjoy; healthy waters that support abundant fish, shellfish, and wildlife populations; a Bay safe from the threats of oil spills, industrial and sewer discharges, and ocean dumping; and a watershed where rivers, streams, inland forests, and wetlands that buffer the Bay are protected.</TableCell>
+              <TableCell className="px-0">
+              <LikeButton></LikeButton>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+              <TableCell className="px-0">
+                <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.savebuzzardsbay.org/take-action/donate/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/savebuzzardsbay/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/savebuzzardsbay";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell className="px-0"><a href='https://coastalstudies.org/'  className="H5"><b>Center for Coastal Studies</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">The Center for Coastal Studies believes the preservation of marine and coastal habitats and the recovery of species is crucial to the health of all life. At the heart of our mission is conservation biology, what socio-biologist E.O. Wilson calls, "a discipline with a deadline, for what we do not save today may be gone tomorrow." Our mission is: to conduct scientific research with emphasis on marine mammals of the western North Atlantic and on the coastal and marine habitats and resources of the Gulf of Maine; to promote stewardship of coastal and marine ecosystems; to conduct educational activities and to provide resources that encourage the responsible use and conservation of coastal and marine ecosystems; and to collaborate with other institutions and individuals whenever possible to advance the Center's mission.</TableCell>
+              <TableCell className="px-0">
+              <LikeButton></LikeButton>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A-</b></span></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://coastalstudies.org/donate/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://coastalstudies.org/about/volunteers/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/coastalstudiesptown/?hl=en";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/coastalstudies/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
 
             </TableBody>
           </Table>

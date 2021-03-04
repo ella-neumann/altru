@@ -8,8 +8,11 @@ import {
   TableRow
 } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import { Button } from "@material-ui/core";
 import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
+import fb_icon from './fb_icon.png';
+import ig_icon from './instagram_icon.png';
 
 const Industry = () => {
   let list = [
@@ -107,15 +110,95 @@ const Industry = () => {
               </TableRow>
             </TableHead>
             <TableBody>
+
             <TableRow>
-                <TableCell className="px-0"><span className="H5"><b></b></span></TableCell>
-                <TableCell className="px-0" colspan="3"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-                <TableCell className="px-0"></TableCell>
-              </TableRow>
+              <TableCell className="px-0"><a href='https://www.villagereach.org/'  className="H5"><b>Village Reach</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">While tremendous investments have been made to bring new medicines, technologies, and other global health innovations to LMICs, barriers to delivering these innovations and providing basic health services remain a significant challenge, especially in the most rural and remote communities. Health systems simply don’t have the capacity to effectively respond to demand through to the last mile –  where healthcare is delivered.</TableCell>
+              <TableCell className="px-0">
+              <LikeButton></LikeButton>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.villagereach.org/ways-to-give/";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/villagereach/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/VillageReach.org";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
+
+
+            <TableRow>
+              <TableCell className="px-0"><a href='https://www.cpex.org/#about'  className="H5"><b>Center for Planning Excellence</b></a></TableCell>
+              <TableCell className="px-0" colspan="3">While tremendous investments have been made to bring new medicines, technologies, and other global health innovations to LMICs, barriers to delivering these innovations and providing basic health services remain a significant challenge, especially in the most rural and remote communities. Health systems simply don’t have the capacity to effectively respond to demand through to the last mile –  where healthcare is delivered.</TableCell>
+              <TableCell className="px-0">
+              <LikeButton></LikeButton>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.cpex.org/membership";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/centerforplanningexcellence";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
 
             </TableBody>
           </Table>

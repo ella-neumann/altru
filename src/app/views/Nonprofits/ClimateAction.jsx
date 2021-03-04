@@ -113,37 +113,61 @@ const ClimateAction = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-          <TableRow>
+            <TableRow>
               <TableCell className="px-0"><span className="H5"><a href='https://zooatlanta.org/'  className="H5"><b>Zoo Atlanta</b></a></span></TableCell>
               <TableCell className="px-0" colspan="3">Zoo Atlanta's mission is to save wildlife and their habitats through research, conservation, education and engaging experiences. The Zoo's efforts connect people to animals and inspire conservation action.</TableCell>
               <TableCell className="px-0">
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://give.zooatlanta.org/donate";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://zooatlanta.org/program/adult-volunteer-program/";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/zooatl/?hl=en";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/ZooATL/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -157,30 +181,54 @@ const ClimateAction = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://donate.adirondackcouncil.org/ways-to-donate";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.adirondackcouncil.org/page/take-action-34.html";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/adirondackcouncil/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/AdirondackCouncil/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -194,30 +242,43 @@ const ClimateAction = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://ncascades.org/support/donate";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/ncascades/?hl=en";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/ncascades/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -231,30 +292,54 @@ const ClimateAction = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://give.wta.org/give/311808/#!/donation/checkout";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.wta.org/get-involved/volunteer";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/washingtontrails/";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/washingtontrails";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -267,31 +352,44 @@ const ClimateAction = () => {
               <TableCell className="px-0">
               <LikeButton></LikeButton>
               </TableCell>
-              <TableCell className="px-0"><span className="H6"><b>B+</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
+              <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "https://www.rainforestcoalition.org/donations/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/global.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "https://www.instagram.com/rainforestcoalition/?hl=en";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "https://www.facebook.com/CfRN16/";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
