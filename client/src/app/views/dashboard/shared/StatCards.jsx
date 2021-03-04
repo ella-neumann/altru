@@ -2,12 +2,12 @@ import React from "react";
 import { Grid, Card, Icon, IconButton, Tooltip } from "@material-ui/core";
 import { withStyles } from "@material-ui/styles";
 
-const styles = theme => ({
+const styles = (theme) => ({
   icon: {
     fontSize: "44px",
     opacity: 0.6,
-    color: theme.palette.primary.main
-  }
+    color: theme.palette.primary.main,
+  },
 });
 
 const StatCards = ({ classes }) => {
@@ -66,7 +66,6 @@ const StatCards = ({ classes }) => {
       <Grid item xs={12} md={6}>
         <Card className="play-card p-sm-24 bg-paper" elevation={6}>
           <div className="flex items-center">
-            <Icon className={classes.icon}>shopping_cart</Icon>
             <div className="ml-3">
               <small className="text-muted">Orders to deliver</small>
               <h6 className="m-0 mt-1 text-primary font-medium">305 Orders</h6>
