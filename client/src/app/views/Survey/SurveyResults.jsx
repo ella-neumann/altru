@@ -1,39 +1,59 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { Breadcrumb, SimpleCard } from "matx";
-import { Icon, Button, IconButton, Fab } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    margin: theme.spacing(1),
-  },
-  input: {
-    display: "none",
-  },
-}));
-
-class Results extends React.Component{
-//display the http get request here?
-}
-
-const SurveyResults = () => {
-  const classes = useStyles();
-  return (
-    <div className="m-sm-30">
-      <div className="mb-sm-30">
-        <Breadcrumb
-          routeSegments={[
-            { name: "Survey", path: "/Survey" },
-            { name: "Results" },
-          ]}
-        />
+class SurveyResults extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {apiResponse: []}
+  }
+  callAPI() {
+    fetch("http://localhost:3001/surveyresults")
+    .then(res => res.json())
+    .then(res => this.setState({apiResponse : res}))
+    .catch(err => err)
+  }
+  componentDidMount() {
+    this.callAPI();
+  }
+  render() {
+    return (
+      <div className="m-sm-30">
+        <div className="mb-sm-30">
+          <Breadcrumb
+            routeSegments={[
+              { name: "Survey", path: "/Survey" },
+              { name: "Results" },
+            ]}
+          />
+        </div>
+        <SimpleCard>
+          <h2>Survey Results!</h2>
+            {this.state.apiResponse.map((data, key) =>{
+              return(
+                <div key={key}>
+                  <h4>Charity:</h4>
+                    <b>{data.charityName}</b>
+                    <h5>&emsp;&emsp;Mission Statement:</h5>
+                    <p>
+                      <ul>{data.mission}</ul>
+                    </p>
+                    <h5>&emsp;&emsp;Current Rating:</h5>
+                      <ul>{data.currentRating.rating}</ul>
+                    <h5>&emsp;&emsp;IRS Classifications:</h5>
+                      <ul>Contributions: {data.irsClassification.deductibility}</ul>
+                      <ul>IRS filing type: {data.irsClassification.subsection}</ul>
+                      <ul>Charity Income: {data.irsClassification.incomeAmount}</ul>
+                      <ul>Charity Classification: {data.irsClassification.classification}</ul>
+                      <ul>Charity Affiliation: {data.irsClassification.affiliation}</ul>
+                    <h5>&emsp;&emsp;Location:</h5>
+                      <ul>{data.mailingAddress.city + ", " + data.mailingAddress.stateOrProvince}</ul>
+                </div>
+              )
+            })}
+        </SimpleCard>
       </div>
-      <SimpleCard>
-      <h4>Survey Results!</h4>
-      {/* <Results/> */}
-      </SimpleCard>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default SurveyResults;
