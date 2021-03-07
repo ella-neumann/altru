@@ -17,6 +17,8 @@ import shareRoute from "./views/share/ShareRoute";
 
 import profileRoutes from "./views/account/ProfileRoutes";
 
+import searchBarRoute from "./views/search/SearchBarRoute";
+
 const redirectRoute = [
   {
     path: "/",
@@ -43,6 +45,7 @@ const routes = [
   ...shareRoute,
   ...redirectRoute,
   ...profileRoutes,
+  ...searchBarRoute,
   ...errorRoute
 ];
 
