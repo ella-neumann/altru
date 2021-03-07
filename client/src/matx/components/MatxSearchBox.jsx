@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Icon, IconButton } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -12,43 +12,42 @@ const styles = (theme) => ({
   },
 });
 
-class MatxSearchBox extends Component {
-  state = {
-    open: false,
+function MatxSearchBox(props) {
+  const [open, setOpen] = useState(false);
+
+  const toggle = () => {
+    window.location.href = "/search/searchbar";
   };
 
-  toggle = () => {
-    this.setState({ open: !this.state.open });
-  };
+  const [searchTerm, setSearchTerm] = useState('');
 
-  render() {
-    let { classes } = this.props;
-    return (
-      <React.Fragment>
-        {!this.state.open && (
-          <IconButton onClick={this.toggle}>
-            <Icon>search</Icon>
+  let classes = props;
+  return (
+    <React.Fragment>
+      {!open && (
+        <IconButton onClick={toggle}>
+          <Icon>search</Icon>
+        </IconButton>
+      )}
+
+      {open && (
+        <div
+          className={`flex items-center h-full matx-search-box ${classes.root}`}
+        >
+          <input
+            className={`px-4 search-box w-full ${classes.root}`}
+            type="text"
+            placeholder="Search for nonprofits..."
+            onChange = {event => {setSearchTerm(event.target.value)}}
+            autoFocus
+          />
+          <IconButton onClick={toggle} className="align-middle mx-4">
+            <Icon>close</Icon>
           </IconButton>
-        )}
-
-        {this.state.open && (
-          <div
-            className={`flex items-center h-full matx-search-box ${classes.root}`}
-          >
-            <input
-              className={`px-4 search-box w-full ${classes.root}`}
-              type="text"
-              placeholder="Search for nonprofits..."
-              autoFocus
-            />
-            <IconButton onClick={this.toggle} className="align-middle mx-4">
-              <Icon>close</Icon>
-            </IconButton>
-          </div>
-        )}
-      </React.Fragment>
-    );
-  }
+        </div>
+      )}
+    </React.Fragment>
+  );
 }
 
 export default withStyles(styles, { withTheme: true })(MatxSearchBox);
