@@ -127,7 +127,7 @@ const Energy = () => {
                     />
                 </Button>
               </TableCell>
-              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="National" /></TableCell>
               <TableCell className="px-0">
                   <Button>
                     <img 
@@ -205,7 +205,7 @@ const Energy = () => {
                 <TableCell className="px-0"><span className="H6"><b>B</b></span></TableCell>
                 <TableCell className="px-0">
               </TableCell>
-              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0"><img src="/assets/images/national.JPEG" width="70px" alt="National" /></TableCell>
               <TableCell className="px-0">
                   <Button>
                     <img 

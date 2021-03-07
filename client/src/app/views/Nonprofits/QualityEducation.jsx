@@ -114,30 +114,54 @@ const QualityEducation = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -145,36 +169,60 @@ const QualityEducation = () => {
             </TableRow>
 
             <TableRow>
-              <TableCell className="px-0"><span className="H5"><a href='AdoptAClassroom.org'  className="H5"><b>AdoptAClassroom.org</b></a></span></TableCell>
+              <TableCell className="px-0"><span className="H5"><a href='AdoptAClassroom.org'  className="H5"><b>Adopt A Classroom</b></a></span></TableCell>
               <TableCell className="px-0"colspan="3">AdoptAClassroom.org gives teachers a hand by providing needed classroom materials so that students can succeed.</TableCell>
               <TableCell className="px-0">
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A+</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
                       }} 
                     />
                   </Button>
@@ -188,30 +236,115 @@ const QualityEducation = () => {
               <LikeButton></LikeButton>
               </TableCell>
               <TableCell className="px-0"><span className="H6"><b>A</b></span></TableCell>
-              <TableCell className="px-0"></TableCell>
-              <TableCell className="px-0"></TableCell>
               <TableCell className="px-0">
               <Button>
                     <img 
-                      src={ig_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://instagram.com";
-                      // }}
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "50px",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
                       }} 
                     />
                   </Button>
                   <Button>
                     <img 
                       src={fb_icon} 
-                      // onClick={() => {
-                      //   window.location.href = "https://facebook.com";
-                      // }}
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
                       style={{
                         position: "relative",
-                        width: "80px",
+                        width: "60px",
+                      }} 
+                    />
+                  </Button>
+              </TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell className="px-0"><a href=''  className="H5"><b>Add here</b></a></TableCell>
+              <TableCell className="px-0" colspan="3"></TableCell>
+              <TableCell className="px-0">
+              <LikeButton></LikeButton>
+              </TableCell>
+              <TableCell className="px-0"><span className="H6"><b></b></span></TableCell>
+              <TableCell className="px-0">
+              <Button>
+                    <img 
+                      src={"/assets/images/donate.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        height: "30px"
+                      }} 
+                    />
+                </Button>
+                <Button>
+                    <img 
+                      src={"/assets/images/volunteer.JPEG"} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative"
+                      }} 
+                    />
+                </Button>
+              </TableCell>
+              <TableCell className="px-0"><img src="/assets/images/local.JPEG" width="70px" alt="Local" /></TableCell>
+              <TableCell className="px-0">
+                  <Button>
+                    <img 
+                      src={ig_icon} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "30px",
+                      }} 
+                    />
+                  </Button>
+                  <Button>
+                    <img 
+                      src={fb_icon} 
+                       onClick={() => {
+                         window.location.href = "";
+                       }}
+                      style={{
+                        position: "relative",
+                        width: "60px",
                       }} 
                     />
                   </Button>
