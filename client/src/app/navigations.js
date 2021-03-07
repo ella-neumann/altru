@@ -85,8 +85,8 @@ export const navigations = [
     ],
   },
   {
-    name: "Nonprofit Rating System",
-    icon: "trending_up",
+    name: "Information",
+    icon: "info",
     children: [
       {
         name: "About Altru",

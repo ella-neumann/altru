@@ -84,11 +84,13 @@ class Dashboard1 extends Component {
               }}
               style={{
                 position: "relative",
-                minWidth: "60%",
+                width: "18vh",
+                height: "4.5vh",
                 left: "20%",
+                fontSize: "1.3vh",
               }}
             >
-              Take our survey!
+              <b>Take our survey!</b>
             </Button>
           </div>
           <div
