@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
+import RefineInputs from './RefineInputs'
 
 const DecentWork = () => {
   let list = [
@@ -72,6 +73,8 @@ const DecentWork = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
       
       <SimpleCard title="8: Decent Work and Economic Growth">
         <center><img src="/assets/images/8DecentWork.png"  height="120" alt="climate-action" /></center>

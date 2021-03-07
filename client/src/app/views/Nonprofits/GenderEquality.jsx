@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
+import RefineInputs from './RefineInputs'
 
 const GenderEquality = () => {
   let list = [
@@ -72,6 +73,8 @@ const GenderEquality = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="5: Gender Equality">
         <center><img src="/assets/images/5GenderEquality.png" height="120" alt="climate-action" /></center>

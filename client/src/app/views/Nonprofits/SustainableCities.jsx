@@ -13,6 +13,7 @@ import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import RefineInputs from './RefineInputs'
 
 const SustainableCities = () => {
   let list = [
@@ -72,6 +73,8 @@ const SustainableCities = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="11: Sustainable Cities and Communities">
         <center><img src="/assets/images/11SustainableCities.png" height="120" alt="climate-action" /></center>

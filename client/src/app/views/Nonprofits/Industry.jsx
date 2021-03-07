@@ -13,6 +13,7 @@ import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import RefineInputs from './RefineInputs'
 
 const Industry = () => {
   let list = [
@@ -72,6 +73,8 @@ const Industry = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="9: industry innovation and infrastructure">
         <center><img src="/assets/images/9Industry.png" height="120" alt="climate-action" /></center>

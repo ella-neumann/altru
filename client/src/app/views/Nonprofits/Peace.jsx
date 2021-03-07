@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
+import RefineInputs from './RefineInputs'
 
 const Peace = () => {
   let list = [
@@ -72,6 +73,8 @@ const Peace = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="16: Peace, Justice and Strong Institutions">
         <center><img src="/assets/images/16PeaceJustice.png" height="120" alt="climate-action" /></center>

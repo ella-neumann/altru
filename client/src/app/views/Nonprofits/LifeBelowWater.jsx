@@ -13,6 +13,7 @@ import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import RefineInputs from './RefineInputs'
 
 const LifeBelowWater = () => {
   let list = [
@@ -72,6 +73,8 @@ const LifeBelowWater = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="14: Life Below Water">
         <center><img src="/assets/images/14LifeBelow.png" height="120" alt="water" /></center>
