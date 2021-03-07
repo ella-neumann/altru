@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
+import RefineInputs from './RefineInputs'
 
 const ReduceInequalities = () => {
   let list = [
@@ -72,6 +73,8 @@ const ReduceInequalities = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="10: Reduced Inequalities">
         <center><img src="/assets/images/10ReducedInequalities.png" height="120" alt="reduced-inequalities" /></center>

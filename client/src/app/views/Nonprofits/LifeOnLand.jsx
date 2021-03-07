@@ -13,6 +13,7 @@ import Highlight from "react-highlight";
 import LikeButton from './LikeButton';
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
+import RefineInputs from './RefineInputs'
 
 const LifeOnLand = () => {
   let list = [
@@ -72,6 +73,8 @@ const LifeOnLand = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="15: Life on Land">
         <center><img src="/assets/images/15Land.png" height="120" alt="climate-action" /></center>

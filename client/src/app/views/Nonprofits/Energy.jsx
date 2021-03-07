@@ -13,6 +13,7 @@ import { Button } from "@material-ui/core";
 import fb_icon from './fb_icon.png';
 import ig_icon from './instagram_icon.png';
 import LikeButton from './LikeButton';
+import RefineInputs from './RefineInputs'
 
 const Energy = () => {
   let list = [
@@ -72,6 +73,8 @@ const Energy = () => {
           ]}
         />
       </div>
+
+      <RefineInputs> </RefineInputs>
 
       <SimpleCard title="7: Affordable and Clean Energy">
         <center><img src="/assets/images/7Energy.png"  height="120" alt="climate-action" /></center>
