@@ -204,7 +204,8 @@ const ClimateAction = () => {
                          window.location.href = "https://www.adirondackcouncil.org/page/take-action-34.html";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -315,7 +316,8 @@ const ClimateAction = () => {
                          window.location.href = "https://www.wta.org/get-involved/volunteer";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
