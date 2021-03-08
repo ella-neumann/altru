@@ -10,25 +10,31 @@ import {
   TableBody,
   TableRow,
 } from "@material-ui/core";
-//6. You have always wanted to volunteer at a local hospital.
-//7. You greatly appreciate your educational opportunities, and would like to ensure others can get the same quality of education.
-//8. You have always wanted to improve equality, regardless of gender identities.
-//9. You want to ensure the availability of clean water and sanitation for everyone.
-//10. You want to help provide access to clean, afforable and renewable energy for all.
 
-class Surveypage2 extends React.Component {
+const useStyles = makeStyles((theme) => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+  input: {
+    display: "none",
+  },
+}));
+
+class Surveypage1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.parentState;
   }
+
   render() {
+    // const classes = useStyles();
     return (
       <div className="m-sm-30">
         <div className="mb-sm-30">
           <Breadcrumb
             routeSegments={[
               { name: "Survey", path: "/Survey" },
-              { name: "Page 2/4" },
+              { name: "Page 1/4" },
             ]}
           />
         </div>
@@ -67,66 +73,65 @@ class Surveypage2 extends React.Component {
                   <TableCell className="px-0" colspan="8">
                     <b>
                       <font size="4">
-                        6. You have always wanted to volunteer at a local
-                        hospital.
+                        1. Given the chance, you prefer to dontate your time to
+                        a charitable organzation or non-profit entity.
                       </font>
                     </b>
                   </TableCell>
                   <TableCell className="px-0" colspan="11">
-                    <LikertButtons questionId="q-6" />
+                    <LikertButtons questionId="q-1" />
                   </TableCell>
                 </TableRow>
                 <TableRow style={{ justifyContent: "space-evenly" }}>
                   <TableCell className="px-0" colspan="8">
                     <b>
                       <font size="4">
-                        7. You greatly appreciate your educational
-                        opportunities, and would like to ensure others can get
-                        the same quality of education.
+                        2. Given the chance, you prefer to donate your money to
+                        a chartiable organzation or non-profit entity.
                       </font>
                     </b>
                   </TableCell>
                   <TableCell className="px-0" colspan="11">
-                    <LikertButtons questionId="q-7" />
+                    <LikertButtons questionId="q-2" />
                   </TableCell>
                 </TableRow>
                 <TableRow style={{ justifyContent: "space-evenly" }}>
                   <TableCell className="px-0" colspan="8">
                     <b>
                       <font size="4">
-                        8. You have always wanted to improve equality,
-                        regardless of gender identities.
+                        3. You favor local charities, rather than national or
+                        multi-national organizations.
                       </font>
                     </b>
                   </TableCell>
                   <TableCell className="px-0" colspan="11">
-                    <LikertButtons questionId="q-8" />
+                    <LikertButtons questionId="q-3" />
                   </TableCell>
                 </TableRow>
                 <TableRow style={{ justifyContent: "space-evenly" }}>
                   <TableCell className="px-0" colspan="8">
                     <b>
                       <font size="4">
-                        9. You want to ensure the availability of clean water
-                        and sanitation for everyone.
+                        4. You have a passion for helping those less fortunate
+                        than you.
                       </font>
                     </b>
                   </TableCell>
                   <TableCell className="px-0" colspan="11">
-                    <LikertButtons questionId="q-9" />
+                    <LikertButtons questionId="q-4" />
                   </TableCell>
                 </TableRow>
                 <TableRow style={{ justifyContent: "space-evenly" }}>
                   <TableCell className="px-0" colspan="8">
                     <b>
                       <font size="4">
-                        10. You want to help provide access to clean, afforable
-                        and renewable energy for all.
+                        5. You have a desire to work with food banks or meal
+                        kitchens.
                       </font>
                     </b>
                   </TableCell>
                   <TableCell className="px-0" colspan="11">
-                    <LikertButtons questionId="q-10" />
+                    <LikertButtons questionId="q-5" />
                   </TableCell>
                 </TableRow>
               </TableBody>
@@ -143,18 +148,9 @@ class Surveypage2 extends React.Component {
         >
           {this.props.nextButton}
         </div>
-        <div
-          style={{
-            position: "absolute",
-            margin: "20px",
-            left: "15px",
-          }}
-        >
-          {this.props.backButton}
-        </div>
       </div>
     );
   }
 }
 
-export default Surveypage2;
+export default Surveypage1;

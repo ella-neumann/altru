@@ -1,17 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Icon, Button, IconButton, Fab } from "@material-ui/core";
-import { Breadcrumb, SimpleCard } from "matx";
 import Form from "react-bootstrap/Form";
-
-const useStyles = makeStyles((theme) => ({
-  button: {
-    margin: theme.spacing(1),
-  },
-  input: {
-    display: "none",
-  },
-}));
 
 const LikertScale = [
   {
@@ -41,13 +29,16 @@ class LikertButtons extends React.Component {
     super(props);
 
     this.state = {
-      selected: "none",
+      selected: this.props.selected,
     };
   }
 
   handleChange(e) {
     // e.preventDefault();
+    console.log(e.target.id);
     this.setState({ selected: e.target.id });
+
+    console.log(this.state.selected);
   }
 
   render() {
@@ -62,6 +53,7 @@ class LikertButtons extends React.Component {
               <Form.Check
                 type="radio"
                 // label={option.label}
+                key={option.id}
                 id={option.id + this.props.questionId}
                 onChange={this.handleChange.bind(this)}
                 checked={
