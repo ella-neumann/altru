@@ -137,7 +137,8 @@ const QualityEducation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -198,7 +199,8 @@ const QualityEducation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -259,7 +261,8 @@ const QualityEducation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -320,7 +323,8 @@ const QualityEducation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

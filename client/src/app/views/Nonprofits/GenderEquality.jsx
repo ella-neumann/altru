@@ -145,7 +145,8 @@ const GenderEquality = () => {
                          window.location.href = "https://www.madre.org/volunteer";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -257,7 +258,7 @@ const GenderEquality = () => {
                        }}
                       style={{
                         position: "relative",
-                        height: "60px"
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -318,7 +319,8 @@ const GenderEquality = () => {
                          window.location.href = "https://dressforsuccess.org/get-involved/volunteer/";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -379,7 +381,8 @@ const GenderEquality = () => {
                          window.location.href = "https://dressforsuccess.org/get-involved/volunteer/";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

@@ -125,7 +125,8 @@ const Energy = () => {
                          window.location.href = "https://energycoalition.org/work-with-us/";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

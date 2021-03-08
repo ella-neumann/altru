@@ -31,14 +31,15 @@ class LikertButtons extends React.Component {
     this.state = {
       selected: this.props.selected,
     };
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
-    // e.preventDefault();
-    console.log(e.target.id);
-    this.setState({ selected: e.target.id });
-
-    console.log(this.state.selected);
+    if (e.target.checked) {
+      this.setState({ selected: e.target.id });
+      this.props.changeLikert(this.props.questionId, e.target.id);
+    }
   }
 
   render() {
@@ -55,7 +56,7 @@ class LikertButtons extends React.Component {
                 // label={option.label}
                 key={option.id}
                 id={option.id + this.props.questionId}
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => this.handleChange(e)}
                 checked={
                   this.state.selected === option.id + this.props.questionId
                 }

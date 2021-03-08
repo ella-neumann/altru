@@ -127,7 +127,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -188,7 +189,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -249,7 +251,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -310,7 +313,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -371,7 +375,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -432,7 +437,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -494,7 +500,8 @@ const Sanitation = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

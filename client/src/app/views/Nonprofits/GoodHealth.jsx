@@ -139,7 +139,8 @@ const GoodHealth = () => {
                          window.location.href = "https://www.wta.org/get-involved/volunteer";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -200,7 +201,8 @@ const GoodHealth = () => {
                          window.location.href = "https://bikeworks.org/adult-classes/volunteering-community-service/";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -261,7 +263,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -322,7 +325,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -383,7 +387,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -444,7 +449,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -505,7 +511,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -566,7 +573,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -627,7 +635,8 @@ const GoodHealth = () => {
                          window.location.href = "";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

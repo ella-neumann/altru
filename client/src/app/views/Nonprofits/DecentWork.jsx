@@ -137,7 +137,7 @@ const DecentWork = () => {
                        }}
                       style={{
                         position: "relative",
-                        height: "60px"
+                        height: "30px"
                       }} 
                     />
                 </Button>
@@ -248,7 +248,8 @@ const DecentWork = () => {
                          window.location.href = "https://dressforsuccess.org/get-involved/volunteer/";
                        }}
                       style={{
-                        position: "relative"
+                        position: "relative",
+                        height: "30px"
                       }} 
                     />
                 </Button>

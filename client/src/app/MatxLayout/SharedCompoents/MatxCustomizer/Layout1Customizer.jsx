@@ -6,21 +6,21 @@ import {
   FormGroup,
   Icon,
   Switch,
-  Grid,
+  // Grid,
   FormControlLabel,
   FormControl,
   FormLabel,
-  Paper
+  // Paper
 } from "@material-ui/core";
 import { get } from "lodash";
 import { themeColors } from "../../MatxTheme/themeColors";
-import BadgeSelected from "./BadgeSelected";
+// import BadgeSelected from "./BadgeSelected";
 import { mainSidebarThemes, topbarThemes } from "./customizerOptions";
 
-const sidebarBG = [
-  "/assets/images/sidebar/sidebar-bg-dark.jpg",
-  "/assets/images/sidebar/sidebar-bg-light.jpg"
-];
+// const sidebarBG = [
+//   "/assets/images/sidebar/sidebar-bg-dark.jpg",
+//   "/assets/images/sidebar/sidebar-bg-light.jpg",
+// ];
 
 const Layout1Customizer = ({ settings, handleChange, handleControlChange }) => {
   return (
@@ -38,7 +38,7 @@ const Layout1Customizer = ({ settings, handleChange, handleControlChange }) => {
                     handleChange("layout1Settings.leftSidebar.theme", color)
                   }
                   style={{
-                    backgroundColor: themeColors[color].palette.primary.main
+                    backgroundColor: themeColors[color].palette.primary.main,
                   }}
                 >
                   {settings.layout1Settings.leftSidebar.theme === color && (
@@ -62,7 +62,7 @@ const Layout1Customizer = ({ settings, handleChange, handleControlChange }) => {
                   handleChange("layout1Settings.topbar.theme", color)
                 }
                 style={{
-                  backgroundColor: themeColors[color].palette.primary.main
+                  backgroundColor: themeColors[color].palette.primary.main,
                 }}
               >
                 {settings.layout1Settings.topbar.theme === color && (
