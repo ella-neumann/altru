@@ -59,30 +59,42 @@ class Survey extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      page: 1,
-      questionPages: [],
-    };
-
-    let filledQuestionPages = this.state.questionPages;
+    let filledQuestionPages = [];
     for (let i = 0; i < questions.length; i++) {
       let pageIdx = (i / questionsPerPage) >> 0;
-      console.log(pageIdx);
+
       while (filledQuestionPages[pageIdx] === undefined) {
         filledQuestionPages.push([]);
       }
 
       filledQuestionPages[pageIdx].push({
-        id: "q-" + i,
+        id: "q-" + (i + 1),
         answered: "none",
         text: i + 1 + ". " + questions[i],
       });
     }
-    this.setState({ questionPages: filledQuestionPages });
+
+    this.state = {
+      page: 1,
+      questionPages: filledQuestionPages,
+    };
+  }
+
+  changeLikert(questionId, newAnswer) {
+    let updQuestions = this.state.questionPages;
+    updQuestions.forEach((page) => {
+      let questionToBeUpd = page.find((question) => {
+        return question.id === questionId;
+      });
+      if (questionToBeUpd !== undefined) {
+        questionToBeUpd.answered = newAnswer;
+      }
+    });
+    this.setState({ questionPages: updQuestions });
   }
 
   nextButton() {
-    return (
+    return this.state.page < (questions.length / questionsPerPage) >> 0 ? (
       <Button
         variant="contained"
         color="primary"
@@ -95,11 +107,7 @@ class Survey extends Component {
       >
         Next
       </Button>
-    );
-  }
-
-  submitButton() {
-    return (
+    ) : (
       <Button
         variant="contained"
         color="secondary"
@@ -116,7 +124,7 @@ class Survey extends Component {
   }
 
   backButton() {
-    return (
+    return this.state.page > 1 ? (
       <Button
         variant="contained"
         color="primary"
@@ -129,7 +137,7 @@ class Survey extends Component {
       >
         Back
       </Button>
-    );
+    ) : null;
   }
 
   render() {
@@ -193,7 +201,11 @@ class Survey extends Component {
                           </b>
                         </TableCell>
                         <TableCell className="px-0" colSpan="11">
-                          <LikertButtons questionId={question.id} />
+                          <LikertButtons
+                            questionId={question.id}
+                            changeLikert={this.changeLikert.bind(this)}
+                            selected={question.answered}
+                          />
                         </TableCell>
                       </TableRow>
                     );
