@@ -91,6 +91,7 @@ class Survey extends Component {
       }
     });
     this.setState({ questionPages: updQuestions });
+    console.log(this.state.questionPages);
   }
 
   nextButton() {
