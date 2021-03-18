@@ -10,48 +10,125 @@ import {
 } from "@material-ui/core";
 import LikertButtons from "./LikertButtons";
 
-const questions = [
+const questionObjects = [
   // 1
-  "Given the chance, you prefer to dontate your time to a charitable organzation or non-profit entity.",
+  {
+    text:
+      "Given the chance, you prefer to dontate your time to a charitable organzation or non-profit entity.",
+    desc: "time",
+  },
   // 2
-  "Given the chance, you prefer to donate your money to a chartiable organzation or non-profit entity.",
+  {
+    text:
+      "Given the chance, you prefer to donate your money to a chartiable organzation or non-profit entity.",
+    desc: "money",
+  },
   // 3
-  "You favor local charities, rather than national or multi-national organizations.",
+  {
+    text:
+      "You favor local charities, rather than national or multi-national organizations.",
+    desc: "local",
+  },
   // 4
-  "You have a passion for helping those less fortunate than you.",
+  {
+    text: "You have a passion for helping those less fortunate than you.",
+    desc: "poverty",
+  },
   // 5
-  "You have a desire to work with food banks or meal kitchens.",
+  {
+    text: "You have a desire to work with food banks or meal kitchens.",
+    desc: "hunger",
+  },
   // 6
-  "You have always wanted to volunteer at a local hospital.",
+  {
+    text: "You have always wanted to volunteer at a local hospital.",
+    desc: "good health",
+  },
   // 7
-  "You greatly appreciate your educational opportunities, and would like to ensure others can get the same quality of education.",
+  {
+    text:
+      "You greatly appreciate your educational opportunities, and would like to ensure others can get the same quality of education.",
+    desc: "quality ed",
+  },
   // 8
-  "You have always wanted to improve equality, regardless of gender identities.",
+  {
+    text:
+      "You have always wanted to improve equality, regardless of gender identities.",
+    desc: "gender eq",
+  },
   // 9
-  "You want to ensure the availability of clean water and sanitation for everyone.",
+  {
+    text:
+      "You want to ensure the availability of clean water and sanitation for everyone.",
+    desc: "clean water",
+  },
   // 10
-  "You want to help provide access to clean, afforable and renewable energy for all.",
+  {
+    text:
+      "You want to help provide access to clean, afforable and renewable energy for all.",
+    desc: "affordable",
+  },
   // 11
-  "Bringing in jobs for everyone to bolster the economy is something you often think about.",
+  {
+    text:
+      "Bringing in jobs for everyone to bolster the economy is something you often think about.",
+    desc: "decent work",
+  },
   // 12
-  "You want to help strengthen the infrastructure and foster an inclusive innovation environment.",
+  {
+    text:
+      "You want to help strengthen the infrastructure and foster an inclusive innovation environment.",
+    desc: "industry, innovation",
+  },
   // 13
-  "You would like to reduce inequalities, regardless of race, religion, or socio-economic status.",
+  {
+    text:
+      "You would like to reduce inequalities, regardless of race, religion, or socio-economic status.",
+    desc: "reduced",
+  },
   // 14
-  "You would like to help build strong sustainable communities.",
+  {
+    text: "You would like to help build strong sustainable communities.",
+    desc: "sustainable cities",
+  },
   // 15
-  "You have wanted to help reduce waste and promote responsible consumption of products.",
+  {
+    text:
+      "You have wanted to help reduce waste and promote responsible consumption of products.",
+    desc: "responsible consumption",
+  },
   // 16
-  "You have noticed that the call to action for climate change has fallen short of your expectations and want to do more.",
+  {
+    text:
+      "You have noticed that the call to action for climate change has fallen short of your expectations and want to do more.",
+    desc: "climate action",
+  },
   // 17
-  "You are often concerned about ocean life and want to help reduce our negative impacts on the ocean.",
+  {
+    text:
+      "You are often concerned about ocean life and want to help reduce our negative impacts on the ocean.",
+    desc: "life below water",
+  },
   // 18
-  "You are often concerned about life on land and want to help reduce our negative impacts on the affected ecosystems.",
+  {
+    text:
+      "You are often concerned about life on land and want to help reduce our negative impacts on the affected ecosystems.",
+    desc: "life on land",
+  },
   // 19
-  "You want to help improve peace and social justice, at all levels, locally or around the world.",
+  {
+    text:
+      "You want to help improve peace and social justice, at all levels, locally or around the world.",
+    desc: "peace justice",
+  },
   // 20
-  "You want to get involved with each of the implimentations of the Sustainable Development Goals.",
+  {
+    text:
+      "You want to get involved with each of the implimentations of the Sustainable Development Goals.",
+    desc: "the goals",
+  },
 ];
+const questions = questionObjects.map((obj) => obj.text);
 
 const questionsPerPage = 5;
 
@@ -91,7 +168,6 @@ class Survey extends Component {
       }
     });
     this.setState({ questionPages: updQuestions });
-    console.log(this.state.questionPages);
   }
 
   nextButton() {
@@ -116,7 +192,44 @@ class Survey extends Component {
           width: "150px",
         }}
         onClick={() => {
-          window.location.href = "../surveyresults";
+          console.log(this.state.questionPages);
+          let compiledQuestions = [];
+
+          let qp = this.state.questionPages;
+
+          qp.map((page) => {
+            page.map((qstn) => {
+              let score =
+                qstn.answered === "none"
+                  ? 0
+                  : qstn.answered.includes("naod")
+                  ? 3
+                  : qstn.answered.includes("sd")
+                  ? 1
+                  : qstn.answered.includes("d")
+                  ? 2
+                  : qstn.answered.includes("sa")
+                  ? 5
+                  : qstn.answered.includes("a")
+                  ? 4
+                  : -1;
+
+              let desc = questionObjects.find((qobj) =>
+                qstn.text.includes(qobj.text)
+              );
+
+              desc = desc ? desc.desc : null;
+
+              compiledQuestions.push({
+                prefDesc: desc,
+                prefWeight: score,
+              });
+            });
+          });
+
+          console.log(compiledQuestions);
+
+          // window.location.href = "../surveyresults";
         }}
       >
         Submit
