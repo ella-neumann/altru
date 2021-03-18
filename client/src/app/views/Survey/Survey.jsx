@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import axios from 'axios';
 import {
   Table,
   TableHead,
@@ -12,14 +13,18 @@ import LikertButtons from "./LikertButtons";
 
 const questions = [
   // 1
+  //time question
   "Given the chance, you prefer to dontate your time to a charitable organzation or non-profit entity.",
   // 2
+  //money question
   "Given the chance, you prefer to donate your money to a chartiable organzation or non-profit entity.",
   // 3
+  //charity locality question
   "You favor local charities, rather than national or multi-national organizations.",
   // 4
+  //SDG#1 no poverty
   "You have a passion for helping those less fortunate than you.",
-  // 5
+  // 5 SDG#2... etc
   "You have a desire to work with food banks or meal kitchens.",
   // 6
   "You have always wanted to volunteer at a local hospital.",
@@ -58,6 +63,7 @@ const questionsPerPage = 5;
 class Survey extends Component {
   constructor(props) {
     super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     let filledQuestionPages = [];
     for (let i = 0; i < questions.length; i++) {
@@ -91,7 +97,7 @@ class Survey extends Component {
       }
     });
     this.setState({ questionPages: updQuestions });
-    console.log(this.state.questionPages);
+    //console.log(this.state.questionPages);
   }
 
   nextButton() {
@@ -115,9 +121,7 @@ class Survey extends Component {
         style={{
           width: "150px",
         }}
-        onClick={() => {
-          window.location.href = "../surveyresults";
-        }}
+        onClick={this.handleSubmit}
       >
         Submit
       </Button>
@@ -140,6 +144,26 @@ class Survey extends Component {
       </Button>
     ) : null;
   }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.questionPages)
+    };
+    fetch("http://localhost:3001/surveyresults", options)
+      .then((res) => {
+        res.json();
+      })
+      .then((res) => {
+        window.location.href = "../surveyresults";
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      });
+  };
 
   render() {
     return (

@@ -16,7 +16,6 @@ class SurveyResults extends React.Component {
   }
 
   componentDidMount() {
-    console.log("I'm here, dad");
     this.callAPI();
   }
 
