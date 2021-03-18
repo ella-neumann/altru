@@ -103,9 +103,6 @@ class Layout1Topbar extends Component {
             </div>
             <div className="flex items-center">
               <MatxSearchBox />
-
-              <NotificationBar />
-
               <MatxMenu
                 menuButton={
                   <img
