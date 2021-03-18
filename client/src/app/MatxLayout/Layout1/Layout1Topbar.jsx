@@ -11,6 +11,8 @@ import { isMdScreen, classList } from "utils";
 import NotificationBar from "../SharedCompoents/NotificationBar";
 import { Link } from "react-router-dom";
 
+
+
 const styles = (theme) => ({
   topbar: {
     "& .topbar-hold": {
@@ -103,9 +105,6 @@ class Layout1Topbar extends Component {
             </div>
             <div className="flex items-center">
               <MatxSearchBox />
-
-              <NotificationBar />
-
               <MatxMenu
                 menuButton={
                   <img

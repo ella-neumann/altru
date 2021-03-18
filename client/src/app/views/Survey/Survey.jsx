@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
+import axios from 'axios';
 import {
   Table,
   TableHead,
@@ -135,6 +136,7 @@ const questionsPerPage = 5;
 class Survey extends Component {
   constructor(props) {
     super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     let filledQuestionPages = [];
     for (let i = 0; i < questions.length; i++) {
@@ -191,7 +193,31 @@ class Survey extends Component {
         style={{
           width: "150px",
         }}
+        onClick={this.handleSubmit}
+      >
+        Submit
+      </Button>
+    );
+  }
+
+  backButton() {
+    return this.state.page > 1 ? (
+      <Button
+        variant="contained"
+        color="primary"
+        style={{
+          width: "150px",
+        }}
         onClick={() => {
+          this.setState({ page: this.state.page - 1 });
+        }}
+      >
+        Back
+      </Button>
+    ) : null;
+  }
+
+  handleSubmit = (event) => {
           console.log(this.state.questionPages);
           let compiledQuestions = [];
 
@@ -228,31 +254,25 @@ class Survey extends Component {
           });
 
           console.log(compiledQuestions);
+    //Ivan stuff^ Chris stuff v
+    event.preventDefault();
 
-          // window.location.href = "../surveyresults";
-        }}
-      >
-        Submit
-      </Button>
-    );
-  }
-
-  backButton() {
-    return this.state.page > 1 ? (
-      <Button
-        variant="contained"
-        color="primary"
-        style={{
-          width: "150px",
-        }}
-        onClick={() => {
-          this.setState({ page: this.state.page - 1 });
-        }}
-      >
-        Back
-      </Button>
-    ) : null;
-  }
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.questionPages)
+    };
+    fetch("http://localhost:3001/surveyresults", options)
+      .then((res) => {
+        res.json();
+      })
+      .then((res) => {
+        window.location.href = "../surveyresults";
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      });
+  };
 
   render() {
     return (
