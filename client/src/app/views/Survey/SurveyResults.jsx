@@ -7,12 +7,12 @@ class SurveyResults extends React.Component {
     this.state = { apiResponse: [] };
   }
   callAPI() {
-    fetch("http://localhost:3001/surveyresults")
+    fetch("http://localhost:3001/survey/getFilteredNonProfits")
       .then((res) => res.json())
-      .then((res) => this.setState({ apiResponse: res }))
-      .catch((error) => {
-        console.log("Error:", error);
-      });
+      .then((res) => this.setState({ apiResponse: res }));
+    // .catch((error) => {
+    //   console.log("Error:", error);
+    // });
   }
 
   componentDidMount() {
@@ -36,7 +36,7 @@ class SurveyResults extends React.Component {
             return (
               <div key={key}>
                 <h4>Charity:</h4>
-                <b>{data.charityName}</b>
+                <a href={data.websiteURL}>{data.charityName} (Click me)</a>
                 <h5>&emsp;&emsp;Mission Statement:</h5>
                 <p>
                   <ul>{data.mission}</ul>

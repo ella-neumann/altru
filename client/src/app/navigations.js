@@ -6,7 +6,12 @@ export const navigations = [
   },
   {
     name: "Survey",
-    path: "/Survey",
+    path: "/survey",
+    icon: "assignment",
+  },
+  {
+    name: "Survey Results",
+    path: "/surveyresults",
     icon: "assignment",
   },
   {

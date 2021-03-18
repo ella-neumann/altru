@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import { Breadcrumb, SimpleCard } from "matx";
-import axios from 'axios';
+import axios from "axios";
 import {
   Table,
   TableHead,
@@ -43,19 +43,19 @@ const questionObjects = [
   // 6
   {
     text: "You have always wanted to volunteer at a local hospital.",
-    desc: "good health",
+    desc: "health",
   },
   // 7
   {
     text:
       "You greatly appreciate your educational opportunities, and would like to ensure others can get the same quality of education.",
-    desc: "quality ed",
+    desc: "education",
   },
   // 8
   {
     text:
       "You have always wanted to improve equality, regardless of gender identities.",
-    desc: "gender eq",
+    desc: "gender equality",
   },
   // 9
   {
@@ -67,30 +67,30 @@ const questionObjects = [
   {
     text:
       "You want to help provide access to clean, afforable and renewable energy for all.",
-    desc: "affordable",
+    desc: "affordable renewable energy",
   },
   // 11
   {
     text:
       "Bringing in jobs for everyone to bolster the economy is something you often think about.",
-    desc: "decent work",
+    desc: "economic growth",
   },
   // 12
   {
     text:
       "You want to help strengthen the infrastructure and foster an inclusive innovation environment.",
-    desc: "industry, innovation",
+    desc: "industry innovation infrastructure",
   },
   // 13
   {
     text:
       "You would like to reduce inequalities, regardless of race, religion, or socio-economic status.",
-    desc: "reduced",
+    desc: "reduce ineqality",
   },
   // 14
   {
     text: "You would like to help build strong sustainable communities.",
-    desc: "sustainable cities",
+    desc: "sustainable living",
   },
   // 15
   {
@@ -120,13 +120,13 @@ const questionObjects = [
   {
     text:
       "You want to help improve peace and social justice, at all levels, locally or around the world.",
-    desc: "peace justice",
+    desc: "global justice",
   },
   // 20
   {
     text:
       "You want to get involved with each of the implimentations of the Sustainable Development Goals.",
-    desc: "the goals",
+    desc: "sustainable development goals",
   },
 ];
 const questions = questionObjects.map((obj) => obj.text);
@@ -218,51 +218,51 @@ class Survey extends Component {
   }
 
   handleSubmit = (event) => {
-          console.log(this.state.questionPages);
-          let compiledQuestions = [];
+    console.log(this.state.questionPages);
+    let compiledQuestions = [];
 
-          let qp = this.state.questionPages;
+    let qp = this.state.questionPages;
 
-          qp.map((page) => {
-            page.map((qstn) => {
-              let score =
-                qstn.answered === "none"
-                  ? 0
-                  : qstn.answered.includes("naod")
-                  ? 3
-                  : qstn.answered.includes("sd")
-                  ? 1
-                  : qstn.answered.includes("d")
-                  ? 2
-                  : qstn.answered.includes("sa")
-                  ? 5
-                  : qstn.answered.includes("a")
-                  ? 4
-                  : -1;
+    qp.map((page) => {
+      page.map((qstn) => {
+        let score =
+          qstn.answered === "none"
+            ? 0
+            : qstn.answered.includes("naod")
+            ? 3
+            : qstn.answered.includes("sd")
+            ? 1
+            : qstn.answered.includes("d")
+            ? 2
+            : qstn.answered.includes("sa")
+            ? 5
+            : qstn.answered.includes("a")
+            ? 4
+            : -1;
 
-              let desc = questionObjects.find((qobj) =>
-                qstn.text.includes(qobj.text)
-              );
+        let desc = questionObjects.find((qobj) =>
+          qstn.text.includes(qobj.text)
+        );
 
-              desc = desc ? desc.desc : null;
+        desc = desc ? desc.desc : null;
 
-              compiledQuestions.push({
-                prefDesc: desc,
-                prefWeight: score,
-              });
-            });
-          });
+        compiledQuestions.push({
+          prefDesc: desc,
+          prefWeight: score,
+        });
+      });
+    });
 
-          console.log(compiledQuestions);
+    console.log(compiledQuestions);
     //Ivan stuff^ Chris stuff v
     event.preventDefault();
 
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(this.state.questionPages)
+      body: JSON.stringify(compiledQuestions),
     };
-    fetch("http://localhost:3001/surveyresults", options)
+    fetch("http://localhost:3001/survey/updateUserPrefs", options)
       .then((res) => {
         res.json();
       })
