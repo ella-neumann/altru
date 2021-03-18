@@ -10,9 +10,9 @@ class RefineInputs extends React.Component {
             <p>&nbsp;Donate 
               &emsp;&emsp;&ensp; Volunteer 
               &emsp;&emsp; Local  
-              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Zip Code
+              {/* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Zip Code
               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Time Commitment
-              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Tags
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Tags */}
             </p>
             <SwitchButton></SwitchButton>
             <SwitchButton></SwitchButton>
